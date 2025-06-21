@@ -1,4 +1,4 @@
-# FoodTruckNerdz
+# FoodTruckNerdz Workspace
 
 ## Important
 This repository syncs files that provide a workspace that coordinates the other repositories, in VSCode. This repository is used to coordinate the other FTN repositories after downloading on your local machine.
