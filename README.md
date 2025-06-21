@@ -12,3 +12,4 @@ For AI tooling. We put the VSCode .code-workspace file here separately so that y
 Download this repository, then download the other repositories INTO this repository's folder.
 - FoodTruckNerdzSite
 - food-truck-api
+- ftn-site-vercel
