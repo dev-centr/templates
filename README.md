@@ -1,4 +1,4 @@
-# Workspace
+# FoodTruckNerdz
 
 ## Important
 Master workspace that coordinates the other repositories. This repository is used to coordinate the other FTN repositories after downloading on your local machine.
