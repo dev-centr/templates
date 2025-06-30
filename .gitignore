@@ -1,4 +1,9 @@
-FoodTruckNerdzSite
-food-truck-api
-food-truck-nerdz-sanity
-ftn-site-vercel
+# Ignore the projects
+**/FoodTruckNerdzSite
+**/food-truck-api
+**/food-truck-nerdz-sanity
+**/ftn-site-vercel
+# ** in front of foldername ignores the folder no matter where it is, even if it is
+# not in the root of the base project. So, if you move the child project to
+# /frontend/ftn-site-vercel , it will still exclude ftn-site-vercel.
+# This gives you the freedom to reorganize your local folders
