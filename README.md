@@ -13,7 +13,7 @@ your development workspace on your local machine.
 ## Why?
 
 For easy onboarding and a consistent development environment for
-our developers, as well as a single workspace for AI tooling to have
+our team, as well as a single workspace for AI tooling to have
 access to the entire code-base at the same time. This allows you to
 make broad changes to the code base quickly.
 
