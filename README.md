@@ -1,11 +1,11 @@
-# FoodTruckNerdz Workspace
+# FoodTruckNerdz Developer Instructions
 
-Start here!
-
-This repository holds settings files and instructions for setting up your
-development workspace on your local machine. First, fork this repository
-to your personal GitHub account. Then Clone this repository first,
-then clone all other FTN repositories into it, on your local dev machine.
+> [!Note]
+> This repository holds settings files and instructions for setting up
+> your development workspace on your local machine. First, fork this
+> repository to your personal GitHub account. Then Clone this repository
+> first, then clone all other FTN repositories into it, on your local dev
+> machine.
 
 ## Why?
 
