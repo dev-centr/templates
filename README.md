@@ -1,57 +1,49 @@
-# FoodTruckNerdz Workspace
+# FoodTruckNerdz Developer Instructions
 
-_Development machine setup instructions._
+This repository holds settings files and instructions for setting up
+your development workspace on your local machine.
+
+1. First, fork this repository to your personal GitHub account.
+2. Then Clone your forked repository
+3. Then fork all other FTN repositories to your GitHub
+4. Then clone all forked FTN repositories into the local folder.
+5. Open the FoodTruckNerdz.code-workspace file in VSCode to set up
+   VSCode.
 
 ## Why?
 
-For AI tooling. The VSCode .code-workspace file is kept here separately
-so you can use AI to change every project simultaneously when you need
-to make broad changes. If the workspace file were located in each
-repository, then RooCode plugin for VSCode would not have a way to work
-on all projects without reopening every project. More power to you.
+For easy onboarding and a consistent development environment for
+our team, as well as a single workspace for AI tooling to have
+access to the entire code-base at the same time. This allows you to
+make broad changes to the code base quickly.
 
-We also include a collection of good extensions to install for VSCode.
-We have suggested plugins as well as some alternative options listed.
+A `.code-workspace` file containing settings and customizations for
+VSCode is provided. The file is stored in this repository, instead of
+the individual repositories, so that the repositories are kept clean
+and separate from the VSCode settings.
+
+If the `.code-workspace` file were located in each repository, then
+AI plugins for VSCode would not have a way to work on all projects
+simultaneously.
+
+We also provide a collection of suggested good extensions for VSCode in
+the `.code-workspace` file. You can see some alternatives by opening up
+the file and looking at the appropriate section.
 
 > [!Note]
 > To see the alternative options and the full list of suggestions, open
-> the `FoodTruckNerdz-Workspace.code-workspace` file and read the
-> "extensions" section.
+> `FoodTruckNerdz.code-workspace` in VSCode and read the "extensions"
+> section.
 
-## Instructions
+## Details
 
-### 1. Fork on GitHub
+- The `.code-workspace` file defines repositories and assigns them labels
+  in VSCode.
+- Git is configured to exclude the other repositories in the `.gitignore`
+  file, so when you sync changes made in the child repositories, they do
+  not get added to the Base accidentally. The .gitignore file contains all
+  repository names in it to ensure this.
 
-To contribute, fork this repository to your own GitHub account using the
-'Fork' button on GitHub.
-
-### 2. Clone to your machine with git or GitHub Desktop
-
-Clone your fork using GitHub Desktop or another version control system
-(such as the `git` command line).
-
-Download all the following repositories into this repository's folder on
-your machine:
-
-- food-truck-api
-- ftn-site-vercel
-
-Optional repositories if you want to look at some failed ideas or
-compare to the remake:
-
-- FoodTruckNerdzSite
-
-This repository is used to coordinate the other repositories on your
-local disk after cloning. It contains a .code-workspace file that
-defines the other repositories and allows tools like RooCode to manage
-the entire code-base as a single workspace. When changes need to be made
-to multiple projects simultaneously, the AI can do it for you.
-
-This repository is configured to exclude the other repositories using
-`.gitignore`, so when you use `git push` to sync changes made in the
-base folder, the other repositories are not included. The .gitignore
-file has all repository names in it to ensure no projects are synced
-into the base repository.
-
-If git accidentally syncs a child repository to this one, add the child
-repository or update its records in the [.gitignore](/.gitignore) file.
+> [!WARNING]
+> If git accidentally syncs a child repository to this one, add the
+> repository to the [.gitignore](/.gitignore) file.
