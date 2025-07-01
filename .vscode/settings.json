@@ -1,19 +1,16 @@
 /*
-The .vscode folder is where folder-specific settings are stored.
-These settings apply only to that particular folder when it's opened in VS Code.
-Common files found here include:
-- settings.json: Contains settings that override user settings for this specific folder.
-- tasks.json: Defines custom tasks for building, testing, etc., for the project in this folder.
-- launch.json: Contains debugging configurations for the project in this folder.
-*/
-
-/*
+This stores more settings for the workspace.
 Most of the workspace settings are in /FoodTruckNerdz-Workspace.code-workspace
+
+
+
 Both locations are valid, but they serve different purposes for markdownlint configuration.
 .markdownlint.json: This file is typically placed in the root of your project. It's the standard way to configure markdownlint for that specific project, ensuring consistency for anyone working on it, regardless of their editor. This is generally the preferred method for project-specific rules.
 .vscode/settings.json: This file is for Visual Studio Code's user or workspace settings. You can configure markdownlint here for your personal VS Code setup, or for a specific VS Code workspace. This is useful for global preferences that apply to all your Markdown files or for workspace-specific overrides that aren't intended to be shared with others.
 */
 
 {
-  
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  }
 }
