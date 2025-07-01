@@ -15,6 +15,10 @@
     {
       "path": "./FTN-docs",
       "name": "|--------------Documentation--------------|"
+    },
+    {
+      "path": "./FoodTruckNerdzSite",
+      "name": "|------------Old Website (GitHub Pages)------------|"
     }
   ],
   "settings": {
