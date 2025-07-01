@@ -1,6 +1,6 @@
 /*
 This stores more settings for the workspace.
-Most of the workspace settings are in /FoodTruckNerdz-Workspace.code-workspace
+Most of the workspace settings are in /FoodTruckNerdz.code-workspace
 
 
 
@@ -12,5 +12,10 @@ Both locations are valid, but they serve different purposes for markdownlint con
 {
   "[markdown]": {
     "editor.wordWrap": "on"
+  },
+  "files.exclude": {
+    "**/food-truck-api": true,
+    "**/ftn-site-vercel": true,
+    "**/FoodTruckNerdzSite": true
   }
 }
