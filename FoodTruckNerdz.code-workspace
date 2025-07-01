@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Project Base (vscode customizations)"
+    },
+    {
+      "path": "ftn-site-vercel",
+      "name": "|-----------Next.js Web App (Vercel)-----------|"
+    },
+    {
+      "path": "./food-truck-api",
+      "name": "|-------------------API-------------------|"
+    },
+    {
+      "path": "./FTN-docs",
+      "name": "|--------------Documentation--------------|"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": true
+    },
+  },
+  "extensions": {
+    "recommendations": [
+      "yzhang.markdown-all-in-one",
+      "dbaeumer.vscode-eslint",
+      "loiane.ts-extension-pack",
+      //"nrjdalal.nextjs-assistant",   // This one is not ready yet. Check back on him in a year. https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
+      "marcbruederlin.next-icons",
+      "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets. Most other snippet plugins are outdated.
+      "kristiyanvelkov.nextjs-file-gelenator", // Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
+    ]
+  }
+}
