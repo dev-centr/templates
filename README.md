@@ -45,5 +45,5 @@ the file and looking at the appropriate section.
   repository names in it to ensure this.
 
 > [!WARNING]
-> If git accidentally syncs a child repository to this one, add the child
-> to the [.gitignore](/.gitignore) file.
+> If git accidentally syncs a child repository to this one, add the
+> repository to the [.gitignore](/.gitignore) file.
