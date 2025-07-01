@@ -7,6 +7,8 @@ your development workspace on your local machine.
 2. Then Clone your forked repository
 3. Then fork all other FTN repositories to your GitHub
 4. Then clone all forked FTN repositories into the local folder.
+5. Open the FoodTruckNerdz.code-workspace file in VSCode to set up
+   VSCode.
 
 ## Why?
 
