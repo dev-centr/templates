@@ -2,10 +2,9 @@
 
 Start here!
 
-This repository holds settings files and serves as a workspace to mount
-all other repositories inside of on your local dev machine.
-
-_Development machine setup instructions._
+This repository holds settings files and instructions for setting up your
+development workspace on your local machine. Clone this repository first,
+then mount all other repositories inside of it, on your local dev machine.
 
 ## Why?
 
