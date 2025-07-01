@@ -22,10 +22,9 @@ VSCode is provided. The file is stored in this repository, instead of
 the individual repositories, so that the repositories are kept clean
 and separate from the VSCode settings.
 
-> [!NOTE]
-> If the `.code-workspace` file were located in each repository, then
-> AI plugins for VSCode would not have a way to work on all projects
-> simultaneously.
+If the `.code-workspace` file were located in each repository, then
+AI plugins for VSCode would not have a way to work on all projects
+simultaneously.
 
 We also provide a collection of suggested good extensions for VSCode in
 the `.code-workspace` file. You can see some alternatives by opening up
@@ -45,6 +44,6 @@ the file and looking at the appropriate section.
   not get added to the Base accidentally. The .gitignore file contains all
   repository names in it to ensure this.
 
-> [!NOTE]
+> [!WARNING]
 > If git accidentally syncs a child repository to this one, add the child
-> repository or update its records in the [.gitignore](/.gitignore) file.
+> to the [.gitignore](/.gitignore) file.
