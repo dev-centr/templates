@@ -3,21 +3,26 @@
 This repository holds settings files and instructions for setting up
 your development workspace on your local machine.
 
-We require you to fork your repository to work on the code.
-
-1. First, fork this repository to your personal GitHub account.
-2. Then Clone your forked repository.
-3. Then fork all other FTN repositories to your GitHub.
-4. Then clone all forked FTN repositories into the local folder.
-5. Open the FoodTruckNerdz.code-workspace file in VSCode to set up
+1. First, clone this base repository to your machine with git or
+   GitHub Desktop.
+2. Then clone all other FTN repositories into the base repository.
+3. Open the FoodTruckNerdz.code-workspace file in VSCode to set up
    VSCode.
+4. If you are working on something that could break things, create
+   a new branch in the repository, using git, GitHub, or VSCode.
 
 Once you are finished with your changes:
 
-1. Commit changes to your cloned local repository.
-2. Sync your changes to your personal GitHub. (`git push`)
-3. Submit your personal GitHub version to the team's GitHub. Do this
-   by submitting a "Pull Request".
+1. Commit changes to the clone.
+2. Sync your clone to the team's GitHub. (`git push`)
+
+> [!NOTE]
+> We do not encourage you to fork the repository to your personal
+> GitHub account. It is not necessary. Just use branches.
+> Forking a repository causes issues when you want to create
+> a pull request. You have to wait for the existing PR to be
+> approved before you can submit another PR. So in this way it is
+> an annoyance to you.
 
 ## Why?
 
