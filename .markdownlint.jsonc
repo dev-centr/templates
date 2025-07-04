@@ -1,5 +1,5 @@
 {
-  "MD033": {
+  "MD033": { // Allow HTML
     "allowed_elements": [
       "b",
       "strong",
@@ -42,5 +42,5 @@
       "div"
     ]
   },
-  "MD013": false
+  "MD013": false // Suppress the 80 character per line limit
 }
