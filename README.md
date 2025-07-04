@@ -10,6 +10,9 @@ your development workspace on your local machine.
    VSCode.
 4. If you are working on something that could break things, create
    a new branch in the repository, using git, GitHub, or VSCode.
+5. If you are creating a new repository/project, add it to the 
+   exclusions list in the Base repository's [.gitignore](/.gitignore)
+   file.
 
 Once you are finished with your changes:
 
