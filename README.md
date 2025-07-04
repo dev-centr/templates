@@ -2,6 +2,8 @@
 
 This repository holds settings files and instructions for setting up your development workspace on your local machine.
 
+![pic](/files/Repository%20Structure%20-%20Vercel%20Free.svg) [Source Excalidraw file](/files/Repository%20Structure%20-%20Vercel%20Free.excalidraw)
+
 1. First, clone this base repository to your machine with git or GitHub Desktop.
 2. Then clone all other FTN repositories into the base repository.
 3. Open the FoodTruckNerdz.code-workspace file in VSCode to set up VSCode.
@@ -11,7 +13,8 @@ This repository holds settings files and instructions for setting up your develo
 Once you are finished with your changes:
 
 1. Commit changes to the clone.
-2. Sync your clone to the team's GitHub. (`git push`)
+2. Set up your local SSH key.
+3. Sync your clone to the team's GitHub. (`git push`). Tip: Try to set up your SSH agent so you don't have to type your SSH key password every time you submit your changes (if it will cooperate--Windows's is finicky).
 
 > [!NOTE] We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
 
