@@ -26,6 +26,7 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
+    "editor.wrappingIndent": "same", // makes lists and stuff wrap on screen with an indent
     // Excluded from git
     "files.exclude": {
       "**/node_modules": true, // hides files to improve search performance in VScode
@@ -38,8 +39,10 @@
       "MD013": false, // Suppress the 80 character per line style recommendation
       "MD033": false // Allow HTML
     },
+    "prettier.proseWrap": "never", // Tells Prettier to hard-wrap Markdown
     "[markdown]": {
-      "editor.wordWrap": "on" // markdown editor
+      "editor.wordWrap": "on", // markdown editor
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
   },
   "extensions": {

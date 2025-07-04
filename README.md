@@ -1,34 +1,23 @@
 # FoodTruckNerdz Developer Instructions
 
-This repository holds settings files and instructions for setting up
-your development workspace on your local machine.
+This repository holds settings files and instructions for setting up your development workspace on your local machine.
 
-1. First, clone this base repository to your machine with git or
-   GitHub Desktop.
+1. First, clone this base repository to your machine with git or GitHub Desktop.
 2. Then clone all other FTN repositories into the base repository.
-3. Open the FoodTruckNerdz.code-workspace file in VSCode to set up
-   VSCode.
-4. If you are working on something that could break things, create
-   a new branch in the repository, using git, GitHub, or VSCode.
-5. If you are creating a new repository/project, add it to the 
-   exclusions list in the Base repository's [.gitignore](/.gitignore)
-   file.
+3. Open the FoodTruckNerdz.code-workspace file in VSCode to set up VSCode.
+4. If you are working on something that could break things, create a new branch in the repository, using git, GitHub, or VSCode.
+5. If you are creating a new repository/project, add it to the exclusions list in the Base repository's [.gitignore](/.gitignore) file.
 
 Once you are finished with your changes:
 
 1. Commit changes to the clone.
 2. Sync your clone to the team's GitHub. (`git push`)
 
-> [!NOTE]
-> We do not encourage you to fork the repository to your personal
-> GitHub account. It is not necessary. Just use branches.
-> Forking a repository causes issues when you want to create
-> a pull request. You have to wait for the existing PR to be
-> approved before you can submit another PR. So in this way it is
-> an annoyance to you.
+> [!NOTE] We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
 
 <details>
 <summary>Why not fork?</summary>
+
 **It is generally NOT recommended to directly work on the `main` (or `master`) branch of your _fork_ and then create a Pull Request from it.**
 
 Here's why, and what the better practice is:
@@ -56,42 +45,24 @@ Here's why, and what the better practice is:
 - **Isolation:** Changes in one feature branch don't affect other ongoing work.
 
 So, to summarize: **Yes, forking a repo is a legitimate and often necessary first step.** But after forking, the best practice is to **create a new, separate branch for each set of changes you want to propose via a Pull Request**, rather than working directly on your fork's `main` branch.
+
 </details>
 
 ## Why?
 
-For easy onboarding and a consistent development environment for
-our team, as well as a single workspace for AI tooling to have
-access to the entire code-base at the same time. This allows you to
-make broad changes to the code base quickly.
+For easy onboarding and a consistent development environment for our team, as well as a single workspace for AI tooling to have access to the entire code-base at the same time. This allows you to make broad changes to the code base quickly.
 
-A `.code-workspace` file containing settings and customizations for
-VSCode is provided. The file is stored in this repository, instead of
-the individual repositories, so that the repositories are kept clean
-and separate from the VSCode settings.
+A `.code-workspace` file containing settings and customizations for VSCode is provided. The file is stored in this repository, instead of the individual repositories, so that the repositories are kept clean and separate from the VSCode settings.
 
-If the `.code-workspace` file were located in each repository, then
-AI plugins for VSCode would not have a way to work on all projects
-simultaneously.
+If the `.code-workspace` file were located in each repository, then AI plugins for VSCode would not have a way to work on all projects simultaneously.
 
-We also provide a collection of suggested good extensions for VSCode in
-the `.code-workspace` file. You can see some alternatives by opening up
-the file and looking at the appropriate section.
+We also provide a collection of suggested good extensions for VSCode in the `.code-workspace` file. You can see some alternatives by opening up the file and looking at the appropriate section.
 
-> [!Note]
-> To see the alternative options and the full list of suggestions, open
-> `FoodTruckNerdz.code-workspace` in VSCode and read the "extensions"
-> section.
+> [!Note] To see the alternative options and the full list of suggestions, open `FoodTruckNerdz.code-workspace` in VSCode and read the "extensions" section.
 
 ## Details
 
-- The `.code-workspace` file defines repositories and assigns them labels
-  in VSCode.
-- Git is configured to exclude the other repositories in the `.gitignore`
-  file, so when you sync changes made in the child repositories, they do
-  not get added to the Base accidentally. The .gitignore file contains all
-  repository names in it to ensure this.
+- The `.code-workspace` file defines repositories and assigns them labels in VSCode.
+- Git is configured to exclude the other repositories in the `.gitignore` file, so when you sync changes made in the child repositories, they do not get added to the Base accidentally. The .gitignore file contains all repository names in it to ensure this.
 
-> [!WARNING]
-> If git accidentally syncs a child repository to this one, exclude the
-> repository by writing it in the [.gitignore](/.gitignore) file.
+> [!WARNING] If git accidentally syncs a child repository to this one, exclude the repository by writing it in the [.gitignore](/.gitignore) file.
