@@ -43,7 +43,9 @@
     "[markdown]": {
       "editor.wordWrap": "on", // markdown editor
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "scm.alwaysShowRepositories": true,
+    "scm.providerCountBadge": "auto"
   },
   "extensions": {
     "recommendations": [
