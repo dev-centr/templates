@@ -49,7 +49,9 @@
   },
   "extensions": {
     "recommendations": [
-      "yzhang.markdown-all-in-one", // Markdown documentation formatter and toolset. Invoke with Alt-Shift-F to format. You can also pretty-format tables after creating them with a key combo.
+      "yzhang.markdown-all-in-one", // Markdown documentation formatter and toolset. Use like normal formatter.
+      // This plugin lets you apply bold, italic, strikethrough, and tasklist formatting to markdown with key combos.
+      // You can also pretty-format tables with a key combo, after creating them.
       "dbaeumer.vscode-eslint", // ESLint is the EcmaScript Linter. ES is the official JavaScript specification. Linter checks syntax and gripes at you about errors or warnings.
       "loiane.ts-extension-pack", // TypeScript extension pack, formatting, syntax highlighting, etc.
       "nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
