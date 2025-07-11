@@ -2,7 +2,9 @@
 
 This repository holds settings files and instructions for setting up your development workspace on your local machine.
 
-![pic](/files/Repository%20Structure%20-%20Vercel%20Free.svg) [Source Excalidraw file](/files/Repository%20Structure%20-%20Vercel%20Free.excalidraw)
+![pic](/files/Repository%20Structure%20-%20Vercel%20Free.svg)
+
+[Source Excalidraw file](/files/Repository%20Structure%20-%20Vercel%20Free.excalidraw)
 
 1. First, clone this base repository to your machine with git or GitHub Desktop.
 2. Then clone all other FTN repositories into the base repository.
@@ -16,7 +18,8 @@ Once you are finished with your changes:
 2. Set up your local SSH key.
 3. Sync your clone to the team's GitHub. (`git push`). Tip: Try to set up your SSH agent so you don't have to type your SSH key password every time you submit your changes (if it will cooperate--Windows's is finicky).
 
-> [!NOTE] We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
+> [!NOTE]
+> We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
 
 <details>
 <summary>Why not fork?</summary>
@@ -61,14 +64,16 @@ If the `.code-workspace` file were located in each repository, then AI plugins f
 
 We also provide a collection of suggested good extensions for VSCode in the `.code-workspace` file. You can see some alternatives by opening up the file and looking at the appropriate section.
 
-> [!Note] To see the alternative options and the full list of suggestions, open `FoodTruckNerdz.code-workspace` in VSCode and read the "extensions" section.
+> [!Note]
+> To see the alternative options and the full list of suggestions, open `FoodTruckNerdz.code-workspace` in VSCode and read the "extensions" section.
 
 ## Details
 
 - The `.code-workspace` file defines repositories and assigns them labels in VSCode.
 - Git is configured to exclude the other repositories in the `.gitignore` file, so when you sync changes made in the child repositories, they do not get added to the Base accidentally. The .gitignore file contains all repository names in it to ensure this.
 
-> [!WARNING] If git accidentally syncs a child repository to this one, exclude the repository by writing it in the [.gitignore](/.gitignore) file.
+> [!WARNING]
+> If git accidentally syncs a child repository to this one, exclude the repository by writing it in the [.gitignore](/.gitignore) file.
 
 ## Additional tools
 

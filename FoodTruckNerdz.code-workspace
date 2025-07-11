@@ -5,7 +5,7 @@
       "name": "Project Base (vscode customizations)"
     },
     {
-      "path": "ftn-site-vercel",
+      "path": "./ftn-site-vercel",
       "name": "|-----------Next.js Web App (Vercel)-----------|"
     },
     {
@@ -41,8 +41,8 @@
     },
     "prettier.proseWrap": "never", // Tells Prettier to hard-wrap Markdown
     "[markdown]": {
-      "editor.wordWrap": "on", // markdown editor
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.wordWrap": "on", // markdown setting to display text wrapping
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "scm.alwaysShowRepositories": true,
     "scm.providerCountBadge": "auto",
@@ -53,13 +53,18 @@
   },
   "extensions": {
     "recommendations": [
-      "yzhang.markdown-all-in-one",
-      "dbaeumer.vscode-eslint",
-      "loiane.ts-extension-pack",
-      //"nrjdalal.nextjs-assistant",   // This one might not be ready yet. Check back on him in a year. https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
-      "marcbruederlin.next-icons",
-      "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets. Most other snippet plugins are outdated.
-      "kristiyanvelkov.nextjs-file-gelenator" // Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
+      "yzhang.markdown-all-in-one", // Markdown documentation formatter and toolset. Use like normal formatter.
+      // This plugin lets you apply bold, italic, strikethrough, and tasklist formatting to markdown with key combos.
+      // You can also pretty-format tables with a key combo, after creating them.
+      "dbaeumer.vscode-eslint", // ESLint is the EcmaScript Linter. ES is the official JavaScript specification. Linter checks syntax and gripes at you about errors or warnings.
+      "loiane.ts-extension-pack", // TypeScript extension pack, formatting, syntax highlighting, etc.
+      "nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
+      "marcbruederlin.next-icons", // Next.js icon-set for VSCode's file tree interface (folder, file types, etc)
+      "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets to quickly populate new next files. Most other snippet plugins are outdated.
+      "kristiyanvelkov.nextjs-file-gelenator", // Next.js File Generator. // Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
+      "github.vscode-pull-request-github", // GitHub augmentations. This lets you see Pull Requests and Issues from GitHub
+      "bierner.markdown-mermaid", // Mermaid diagramming language renderer for markdown doc previews.
+      "bpruitt-goddard.mermaid-markdown-syntax-highlighting" // Mermaid support for Markdown files
     ]
   }
 }
