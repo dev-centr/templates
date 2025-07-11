@@ -44,6 +44,7 @@
       "editor.wordWrap": "on", // markdown setting to display text wrapping
       "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
+    "markdown.extension.list.indentationSize": "inherit", // make Markdown All In One plugin adhere to bullet tab spacing
     "scm.alwaysShowRepositories": true,
     "scm.providerCountBadge": "auto",
     "workbench.colorCustomizations": {
