@@ -55,7 +55,10 @@
       //"nrjdalal.nextjs-assistant",   // This one might not be ready yet. Check back on him in a year. https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
       "marcbruederlin.next-icons",
       "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets. Most other snippet plugins are outdated.
-      "kristiyanvelkov.nextjs-file-gelenator" // Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
+      "kristiyanvelkov.nextjs-file-gelenator",
+      "github.vscode-pull-request-github",
+      "bierner.markdown-mermaid",
+      "bpruitt-goddard.mermaid-markdown-syntax-highlighting" // Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
     ]
   }
 }
