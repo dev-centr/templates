@@ -1,6 +1,6 @@
 # FoodTruckNerdz Developer Instructions
 
-This is the base repository / master repository, inside which you should load all of the other repositories. This repository holds settings files and instructions for setting up your development workspace on your local machine.
+This is the base repository / master repository, which you should load all of the other repositories inside of. This repository holds settings files and instructions for setting up your development workspace on your local machine.
 
 ![pic](/files/Repository%20Structure%20-%20Vercel%20Free.svg)
 
