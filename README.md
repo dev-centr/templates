@@ -69,3 +69,10 @@ We also provide a collection of suggested good extensions for VSCode in the `.co
 - Git is configured to exclude the other repositories in the `.gitignore` file, so when you sync changes made in the child repositories, they do not get added to the Base accidentally. The .gitignore file contains all repository names in it to ensure this.
 
 > [!WARNING] If git accidentally syncs a child repository to this one, exclude the repository by writing it in the [.gitignore](/.gitignore) file.
+
+## Additional tools
+
+### Web Dev
+
+- [VisBug](https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc) - Lets you edit a web design in your browser using drag and drop while the page is live.
+- [Jam.dev](https://jam.dev) - Debugging tool. Lets you record video of website problem as well as capturing technical logs and creates bug reports automatically.
