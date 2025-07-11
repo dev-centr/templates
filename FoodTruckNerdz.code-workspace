@@ -45,7 +45,11 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "scm.alwaysShowRepositories": true,
-    "scm.providerCountBadge": "auto"
+    "scm.providerCountBadge": "auto",
+    "workbench.colorCustomizations": {
+      "mergeEditor.conflict.unhandledFocused.border": "#00945b",
+      "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
+    }
   },
   "extensions": {
     "recommendations": [
