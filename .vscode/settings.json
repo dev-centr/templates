@@ -6,7 +6,8 @@
     // This prevents these folders from showing up twice in VSCode, since the "Project Base" contains these folders, but we assigned them their own root nodes as well.
     "**/food-truck-api": true,
     "**/ftn-site-vercel": true,
-    "**/FoodTruckNerdzSite": true
+    "**/FoodTruckNerdzSite": true,
+    "**/docs": true
   }
 }
 
