@@ -52,7 +52,7 @@
       "yzhang.markdown-all-in-one",
       "dbaeumer.vscode-eslint",
       "loiane.ts-extension-pack",
-      //"nrjdalal.nextjs-assistant",   // This one might not be ready yet. Check back on him in a year. https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
+      "nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
       "marcbruederlin.next-icons",
       "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets. Most other snippet plugins are outdated.
       "kristiyanvelkov.nextjs-file-gelenator",
