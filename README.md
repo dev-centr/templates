@@ -1,15 +1,11 @@
 # FoodTruckNerdz Developer Instructions
 
-This is the base repository / master repository, which you should load all of the other repositories inside of. This repository holds settings files and instructions for setting up your development workspace on your local machine.
-
-![pic](/files/Repository%20Structure%20-%20Vercel%20Free.svg)
-
-[Source Excalidraw file](/files/Repository%20Structure%20-%20Vercel%20Free.excalidraw)
+This is the Base repository / master repository. This repository holds settings files and instructions for setting up your development workspace on your local machine. You will load all of the other repositories inside of this one on your local machine.
 
 1. First, clone this base repository to your machine with git or GitHub Desktop.
 2. Then clone all other FTN repositories into the base repository.
-3. Open the FoodTruckNerdz.code-workspace file in VSCode to set up VSCode.
-4. If you are working on something that could break things, create a new branch in the repository, using git, GitHub, or VSCode.
+3. Open the FoodTruckNerdz.code-workspace file in VSCode to set up VSCode. If you set up your clones correctly, you should be able to click on the different project roots in the file list and expand them to see files.
+4. If you work on something that could break things, create a new branch in whichever repository you are editing using VSCode's source control panel, GitHub app, or any other Git client.
 5. If you are creating a new repository/project, add it to the exclusions list in the Base repository's [.gitignore](/.gitignore) file.
 
 Once you are finished with your changes:
@@ -53,6 +49,8 @@ Here's why, and what the better practice is:
 So, to summarize: **Yes, forking a repo is a legitimate and often necessary first step.** But after forking, the best practice is to **create a new, separate branch for each set of changes you want to propose via a Pull Request**, rather than working directly on your fork's `main` branch.
 
 </details>
+
+To get started on the Web app, proceed to the README in [ftn-site-vercel](https://github.com/FoodTruckNerds/ftn-site-vercel).
 
 ## Why?
 
