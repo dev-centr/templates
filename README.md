@@ -3,7 +3,6 @@
 This repository holds settings files and instructions for setting up your development workspace on your local machine.
 
 ![pic](/files/Repository%20Structure%20-%20Vercel%20Free.svg)
-
 [Source Excalidraw file](/files/Repository%20Structure%20-%20Vercel%20Free.excalidraw)
 
 1. First, clone this base repository to your machine with git or GitHub Desktop.
