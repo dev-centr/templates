@@ -6,19 +6,19 @@
     },
     {
       "path": "./ftn-site-vercel",
-      "name": "|-----------Next.js Web App (Vercel)-----------|"
+      "name": "|----Next.js Web App (Vercel)----|"
     },
     {
       "path": "./food-truck-api",
-      "name": "|-------------------API-------------------|"
+      "name": "|----API (backend)----|"
     },
     {
       "path": "./docs",
-      "name": "|--------------Documentation--------------|"
+      "name": "|----Documentation----|"
     },
     {
       "path": "./FoodTruckNerdzSite",
-      "name": "|------------Old Website (GitHub Pages)------------|"
+      "name": "|----Old Website (GitHub Pages)----|"
     }
   ],
   "settings": {
