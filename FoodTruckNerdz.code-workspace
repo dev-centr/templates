@@ -60,6 +60,7 @@
       // You can also pretty-format tables with a key combo, after creating them.
       "dbaeumer.vscode-eslint", // ESLint is the EcmaScript Linter. ES is the official JavaScript specification. Linter checks syntax and gripes at you about errors or warnings.
       "loiane.ts-extension-pack", // TypeScript extension pack, formatting, syntax highlighting, etc.
+      "esbenp.prettier-vscode", // Code formatter
       "nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
       "marcbruederlin.next-icons", // Next.js icon-set for VSCode's file tree interface (folder, file types, etc)
       "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets to quickly populate new next files. Most other snippet plugins are outdated.
