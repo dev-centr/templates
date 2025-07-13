@@ -1,6 +1,8 @@
 # FoodTruckNerdz Developer Instructions
 
-This is the Base repository / master repository. This repository holds settings files and instructions for setting up your development workspace on your local machine. You will load all of the other repositories inside of this one on your local machine.
+This is the Base repository / master repository. This repository holds files and instructions for setting up your local machine.
+
+This repository functions as a nest for your other ftn repositories. It will contain all of them on your machine, and settings specified in `FoodTruckNerdz.code-workspace` file will apply globally inn VSCode for this workspace.
 
 1. First, clone this base repository to your machine with git or GitHub Desktop.
 2. Then clone all other FTN repositories into the base repository.
