@@ -14,9 +14,10 @@ Setup process:
 
 Once you are finished with your changes:
 
-1. Commit changes to the clone.
-2. Set up your local SSH key.
-3. Sync your clone to the team's GitHub. (`git push`). Tip: Try to set up your SSH agent so you don't have to type your SSH key password every time you submit your changes (if it will cooperate--Windows's is finicky).
+1. Commit changes locally. Use multiple small commits and be descriptive about your changes. Commit them in small batches by picking a few related files to add each time.
+2. Sync your clone to the team's GitHub. (`git push`). [Set up your local SSH key](<https://github.com/FoodTruckNerds/docs/blob/3a503a52af0bb5c354bd4ac0519543a62576cc28/plain%20markdown/ssh-keys-setup.md>), first.
+3. Tip: Try to set up your SSH agent so you don't have to type your SSH key password every time you submit your changes (if it will cooperate--Windows's is finicky).
+3. To acquire changes from your team, fetch or pull changes (fetch preferred, since it will let you inspect files before overwriting).
 
 > [!NOTE]
 > We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
