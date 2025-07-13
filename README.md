@@ -54,7 +54,7 @@ So, to summarize: **Yes, forking a repo is a legitimate and often necessary firs
 
 </details>
 
-To get started on the Web app, proceed to the README in [ftn-site-vercel](https://github.com/FoodTruckNerds/ftn-site-vercel).
+To get started on the Web app, proceed to the [README](<https://www.github.com/FoodTruckNerds/ftn-site-vercel/README.md>) in `ftn-site-vercel`.
 
 ## Why?
 
