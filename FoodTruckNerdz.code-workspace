@@ -68,7 +68,9 @@
       "github.vscode-pull-request-github", // GitHub augmentations. This lets you see Pull Requests and Issues from GitHub
       "bierner.markdown-mermaid", // Mermaid diagramming language renderer for markdown doc previews.
       "bpruitt-goddard.mermaid-markdown-syntax-highlighting", // Mermaid support for Markdown files
-      "henoc.svgeditor" // SVG graphics literal editor (view the text), and visual editor
+      "henoc.svgeditor", // SVG graphics literal editor (view the text), and visual editor
+      "mhutchie.git-graph", // lets you view git graph in bigger view
+      "eamodio.gitlens" // lets you search the history of the repository's files using string search
     ]
   }
 }
