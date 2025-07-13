@@ -9,8 +9,8 @@ Setup process:
 1. Clone this base repository to your machine with git or GitHub Desktop.
 2. Clone all other FTN repositories that you will be working on into the base repository.
 3. Open the `FoodTruckNerdz.code-workspace` file in VSCode. If you set up your clones correctly, their files should show up in the file browser under their respective root nodes, which I have given descriptive names to.
-4. If you work on something that could break things, create a new branch in whichever repository you are editing using VSCode's source control panel, GitHub app, or any other Git client.
-5. If you are creating a new repository/project, add it to the exclusions list in the Base repository's [.gitignore](/.gitignore) file.
+4. Create a new branch in whichever repository you are editing, using git, if you are working on something that could break things.
+5. If you create a new repository/project, register it to the exclusions list in the [.gitignore](/.gitignore) file in this repository.
 
 Once you are finished with your changes:
 
