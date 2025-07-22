@@ -42,7 +42,10 @@
     "prettier.proseWrap": "never", // Tells Prettier to never hard-wrap Markdown
     "[markdown]": {
       "editor.wordWrap": "on", // markdown setting to display text wrapping
-      "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "explicit" // enables markdownlint to autoformat on save, after markdown-all-in-one
+      }
     },
     "markdown.extension.list.indentationSize": "inherit", // make Markdown All In One plugin adhere to bullet tab spacing
     "scm.alwaysShowRepositories": true,
