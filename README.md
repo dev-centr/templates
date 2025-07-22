@@ -16,6 +16,10 @@ Once you are finished with your changes:
 
 1. Commit changes locally. Use multiple small commits and be descriptive about your changes. Commit them in small batches by picking a few related files to add each time.
 2. Sync your changes to the team's GitHub. [Set up your local SSH key](<https://github.com/FoodTruckNerds/docs/blob/3a503a52af0bb5c354bd4ac0519543a62576cc28/plain%20markdown/ssh-keys-setup.md>), first.
+
+   > [!Warning]
+   > **VSCode SSH Key Path Bug:** If you are using VSCode and experiencing repeated password prompts for repositories synced with SSH URLs, ensure your local SSH key is *not* located in a path that contains spaces. VSCode currently has a bug that prevents it from correctly reading SSH keys from paths with spaces, leading to continuous password requests. For more details, refer to the bug report: <https://mail.google.com/mail/u/0/#sent/QgrcJHsbcTcvDzRxtMXTQFWTjDNwLLpCvwb>
+
 3. To acquire changes from your team, fetch or pull changes (fetch preferred, since it will let you inspect files before overwriting).
 
 > [!NOTE]
