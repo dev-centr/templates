@@ -5,8 +5,12 @@
       "name": "Project Base (vscode customizations)"
     },
     {
+      "path": "./.github-private",
+      "name": "|----GitHub Profile----|"
+    },
+    {
       "path": "./ftn-site-vercel",
-      "name": "|----Next.js Web App (Vercel)----|"
+      "name": "|----Next.js Vercel Web App----|"
     },
     {
       "path": "./food-truck-api",
@@ -14,11 +18,11 @@
     },
     {
       "path": "./docs",
-      "name": "|----Documentation----|"
+      "name": "|----Docs----|"
     },
     {
       "path": "./FoodTruckNerdzSite",
-      "name": "|----Old Website (GitHub Pages)----|"
+      "name": "|----Old Site (GitHub Pages)----|"
     }
   ],
   "settings": {
