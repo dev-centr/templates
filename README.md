@@ -82,7 +82,7 @@ We also provide a collection of suggested good extensions for VSCode in the `.co
 
 ## Details
 
-- The `.code-workspace` file defines repositories and assigns them labels in VSCode.
+- The [`FoodTruckNerdz.code-workspace`](<FoodTruckNerdz.code-workspace>) file configures VSCode to display labels for the different repositories.
 - Git is configured to exclude the other repositories in the `.gitignore` file, so when you sync changes made in the child repositories, they do not get added to the Base accidentally. The .gitignore file contains all repository names in it to ensure this.
 
 > [!Warning]
