@@ -16,7 +16,7 @@ Setup process:
 4. Create a new code branch in repositories before you start editing, if you are working on something that could break things.
 
 > [!Important]
-> If you create a new repository/project, register it to the [`.gitignore`](<.gitignore>)'s exclusions list (in base repository).
+> If you create a new repository/project, register it to the [`.gitignore`](<.gitignore>)'s exclusions list in the base repository.
 
 Once you are finished with your changes:
 
