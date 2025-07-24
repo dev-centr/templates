@@ -32,7 +32,7 @@ Once you are finished with your changes:
 > We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
 
 <details>
-<summary>Why not fork?</summary>
+<summary>Why not to fork</summary>
 
 **It is generally NOT recommended to directly work on the `main` (or `master`) branch of your _fork_ and then create a Pull Request from it.**
 
@@ -87,10 +87,3 @@ We also provide a collection of suggested good extensions for VSCode in the `.co
 
 > [!Warning]
 > If git accidentally syncs a child repository to this one, exclude the repository by writing it in the [`.gitignore`](/.gitignore) file.
-
-## Additional tools
-
-### Web Dev
-
-- [VisBug](https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc) - Lets you edit a web design in your browser using drag and drop while the page is live.
-- [Jam.dev](https://jam.dev) - Debugging tool. Lets you record video of website problem as well as capturing technical logs and creates bug reports automatically.
