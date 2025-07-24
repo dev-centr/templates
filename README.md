@@ -68,7 +68,8 @@ To get started on the Web app, proceed to [ftn-site-vercel](<https://www.github.
 
 ## Why?
 
-For easy onboarding and a consistent development environment for our team, as well as a single workspace for AI tooling to have access to the entire code-base at the same time. This allows you to make broad changes to the code base quickly.
+Q: Why do we put the other repositories in this base repository?
+A: For easy onboarding and a consistent development environment for our team, as well as a single workspace for AI tooling to have access to the entire code-base at the same time. This allows you to make broad changes to the code base quickly.
 
 A `.code-workspace` file containing settings and customizations for VSCode is provided. The file is stored in this repository, instead of the individual repositories, so that the repositories are kept clean and separate from the VSCode settings.
 
@@ -77,7 +78,7 @@ If the `.code-workspace` file were located in each repository, then AI plugins f
 We also provide a collection of suggested good extensions for VSCode in the `.code-workspace` file. You can see some alternatives by opening up the file and looking at the appropriate section.
 
 > [!Note]
-> To see the alternative options and the full list of suggestions, open `FoodTruckNerdz.code-workspace` in VSCode and read the "extensions" section.
+> To see the alternative options and the full list of suggestions, look at the "extensions" section in [`FoodTruckNerdz.code-workspace`](<FoodTruckNerdz.code-workspace>).
 
 ## Details
 
