@@ -1,6 +1,6 @@
 # FoodTruckNerdz Developer Instructions
 
-This is the Base repository / master repository. This repository holds files and instructions for setting up your local machine.
+This is the Base repository. It holds files and instructions for setting up your local machine.
 
 This repository functions as a nest for your other FTN repositories. It will contain all of them on your machine, and settings specified in `FoodTruckNerdz.code-workspace` file will apply globally in VSCode for this workspace.
 
