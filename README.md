@@ -33,7 +33,7 @@ Once you are ready to commit your code:
       or if it is not already installed on macOS:
       - `brew install --cask git-credential-manager`
      
-      You can check what level(s) are configured and where to find the settings files using `git config --show-origin credential.helper`. Please note there are no examples on the internet using this, but this is the correct solution. The official git-config [documentation](<https://git-scm.com/docs/git-config>) does not specifically mention this, but the functionality is implied.
+      If you need to unset one of these levels, you must delete any lines mentioning the setting (`helper=blah`) from its config file. But first you have to find the file: you can check what level(s) are configured and where to find the settings files using `git config --show-origin credential.helper`. Please note there are no examples on the internet using this, but this is the correct solution. The official git-config [documentation](<https://git-scm.com/docs/git-config>) does not specifically mention this, but the functionality is implied.
 
       For a full in-depth explanation of config levels, see this article: [System , global, and local Git config files on Windows and Linux](<https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved>)
 
