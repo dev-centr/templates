@@ -33,7 +33,7 @@ Once you are ready to commit your code:
       or if it is not already installed on macOS:
       - `brew install --cask git-credential-manager`
      
-      For a full in depth explanation of git's config levels, see this article: [System , global, and local Git config files on Windows and Linux](<https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved>)
+      For a full in-depth explanation of git's config levels, see this article: [System , global, and local Git config files on Windows and Linux](<https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved>)
 
 > [!Note]
 > We do not encourage you to fork the repository to your personal GitHub account. It is not necessary. Just use branches. Forking a repository causes issues when you want to create a pull request. You have to wait for the existing PR to be approved before you can submit another PR. So in this way it is an annoyance to you.
