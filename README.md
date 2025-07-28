@@ -87,4 +87,4 @@ To get started on the Next.js web app, see `ftn-site-vercel`'s [`README.md`](<ht
 - We provide a list of suggested plugins in the "extensions" section in [`FoodTruckNerdz.code-workspace`](<FoodTruckNerdz.code-workspace>).
 
 > [!Warning]
-> If you accidentally sync a child repository to this one, add the repository to the [`.gitignore`](/.gitignore) file to prevent it from syncing in the future, commit that to the repository, and then use source control or a git GUI to "cherry pick" the commit that was *before* accidentally committing, and merge it with the latest commit.
+> If you accidentally sync a child repository to this one, add the repository to the [`.gitignore`](/.gitignore) file to prevent it from syncing in the future, commit that to the repository, and then fix the accidentaly commit by using `git revert` or `git cherry-pick` in a source control GUI or via the command line to fix it. If using "cherry-pick", you must pick the commit *before* accidentally committing, not the commit where you committed.
