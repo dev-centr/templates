@@ -10,14 +10,11 @@ Set up this repository first, then put the other repositories inside of it. This
 
 1. Clone this repository to your machine.
 2. Clone all other repositories that you will be working on into the base repository.
-3. Open the `FoodTruckNerdz.code-workspace` file in VSCode. If you are editing the file, look for a button in the editor that says "open this workspace".
-
-> [!Warning]
-> If your repositories are set up incorrectly, the files will not show up, but the root nodes' labels will.
+3. Open the `FoodTruckNerdz.code-workspace` file in VSCode. If you are editing the file, look for a button in the editor that says "open this workspace". After opening the workspace, if your repositories are set up correctly, the files will show up within the labeled sections (root nodes). If they were not set up correctly, the files will not show up, but the root nodes' labels will.
 
 > [!Important]
 >
-> - Create a new code branch in repositories before you start editing, if you are working on something that could break things.
+> - If you are working on something that could break things, create a new code branch in repositories before you start editing.
 > - If you create a new repository/project, register it to the [`.gitignore`](<.gitignore>)'s exclusions list in the base repository.
 
 ## Committing
