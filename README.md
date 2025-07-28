@@ -6,7 +6,7 @@ This is the Base repository. It holds instructions and support files for setting
 
 Set up this repository first, then put the other repositories inside of it. This repository coordinates the other repositories so that AI tools can be used to make broad changes quickly across all FTN projects when needed. After downloading all of the repositories, launch the workspace by opening the [`FoodTruckNerdz.code-workspace`](<FoodTruckNerdz.code-workspace>) file in VSCode. The settings specified in it will apply for all projects in the workspace.
 
-### Steps:
+### Steps
 
 1. Clone this repository to your machine.
 2. Clone all other repositories that you will be working on into the base repository.
@@ -16,6 +16,7 @@ Set up this repository first, then put the other repositories inside of it. This
 > If your repositories are set up incorrectly, the files will not show up, but the root nodes' labels will.
 
 > [!Important]
+>
 > - Create a new code branch in repositories before you start editing, if you are working on something that could break things.
 > - If you create a new repository/project, register it to the [`.gitignore`](<.gitignore>)'s exclusions list in the base repository.
 
@@ -39,13 +40,13 @@ Once you are ready to commit your code:
 > <details>
 > <summary>Why not to fork</summary>
 >
-> It is generally NOT recommended to directly work on the `main` (or `master`) branch of your _fork_ and then create a Pull Request from it.
+> It is generally NOT recommended to directly work on the `main` (or `master`) branch of your *fork* and then create a Pull Request from it.
 >
 > Here's why, and what the better practice is:
 >
 > **Why working on `main` of your fork is problematic:**
 >
-> - **Single PR at a time:** If you work directly on `main` in your fork, you can only have _one active Pull Request_ open at a time for that specific fork. If you want to contribute another feature or bug fix while the first PR is still pending, you'll run into issues.
+> - **Single PR at a time:** If you work directly on `main` in your fork, you can only have *one active Pull Request* open at a time for that specific fork. If you want to contribute another feature or bug fix while the first PR is still pending, you'll run into issues.
 > - **Conflicting commits:** Once your PR is merged into the upstream (original) repository's `main` branch, your fork's `main` branch now has those same commits. If you then try to pull the latest changes from the upstream `main` to update your fork's `main`, you'll likely face merge conflicts because those commits already exist in your history. It becomes a mess to synchronize.
 > - **Maintainer collaboration:** If maintainers of the original project need to make small changes or test things on your PR branch, it's difficult if you're on your `main` branch, especially if branch protection rules are in place.
 >
@@ -56,7 +57,7 @@ Once you are ready to commit your code:
 > 3. **Create a new, dedicated feature branch:** **This is the crucial step.** For every new feature, bug fix, or contribution, create a new branch from your fork's `main` branch (e.g., `git checkout -b my-new-feature`).
 > 4. **Make your changes and commit them on this feature branch.**
 > 5. **Push the feature branch to your fork:** `git push origin my-new-feature`.
-> 6. **Open a Pull Request:** From your feature branch in your fork to the `main` branch of the _original_ (upstream) repository.
+> 6. **Open a Pull Request:** From your feature branch in your fork to the `main` branch of the *original* (upstream) repository.
 >
 > **Benefits of using feature branches in your fork:**
 >
@@ -83,4 +84,4 @@ To get started on the Next.js web app, see `ftn-site-vercel`'s [`README.md`](<ht
 - We provide a list of suggested plugins in the "extensions" section in [`FoodTruckNerdz.code-workspace`](<FoodTruckNerdz.code-workspace>).
 
 > [!Warning]
-> If you accidentally sync a child repository to this one, add the repository to the [`.gitignore`](/.gitignore) file to prevent it from syncing in the future, commit that to the repository, and then use source control or a git GUI to "cherry pick" the commit that was _before_ accidentally committing, and merge it with the latest commit.
+> If you accidentally sync a child repository to this one, add the repository to the [`.gitignore`](/.gitignore) file to prevent it from syncing in the future, commit that to the repository, and then use source control or a git GUI to "cherry pick" the commit that was *before* accidentally committing, and merge it with the latest commit.
