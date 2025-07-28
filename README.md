@@ -88,3 +88,6 @@ To get started on the Next.js web app, see `ftn-site-vercel`'s [`README.md`](<ht
 
 > [!Warning]
 > If you accidentally sync a child repository to this one, add the repository to the [`.gitignore`](/.gitignore) file to prevent it from syncing in the future, commit that to the repository, and then fix the accidentaly commit by using `git revert` or `git cherry-pick` in a source control GUI or via the command line to fix it. If using "cherry-pick", you must pick the commit *before* accidentally committing, not the commit where you committed.
+>
+> - `git revert` advantage: Simplicity for collaborators: If others have already pulled the accidental commit, git revert is the least disruptive way to fix it. They just pull the new revert commit, and their history remains linear and consistent.
+> - `git cherry-pick` advantage: removes large files from history completely. Use this if you committed large files or a large quantity of small files (like accidentally including the `node_modules` directory).
