@@ -58,8 +58,8 @@
       "mergeEditor.conflict.unhandledFocused.border": "#00945b",
       "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
     },
-    "git.closeDiffOnOperation": true,
-    "githubPullRequests.ignoredPullRequestBranches": ["main"] // This closes the code 'diff' after you add it to a commit
+    "git.closeDiffOnOperation": true, // This closes the code 'diff' after you add it to a commit
+    "githubPullRequests.ignoredPullRequestBranches": ["main"]
   },
   "extensions": {
     "recommendations": [
