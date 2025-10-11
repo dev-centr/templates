@@ -59,7 +59,8 @@
       "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
     },
     "git.closeDiffOnOperation": true, // This closes the code 'diff' after you add it to a commit
-    "githubPullRequests.ignoredPullRequestBranches": ["main"]
+    "githubPullRequests.ignoredPullRequestBranches": ["main"],
+    "powershell.cwd": "Project Base"
   },
   "extensions": {
     "recommendations": [
