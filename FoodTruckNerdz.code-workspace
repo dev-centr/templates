@@ -2,27 +2,27 @@
   "folders": [
     {
       "path": ".",
-      "name": "Project Base (vscode customizations)"
+      "name": "Project Base"
     },
     {
       "path": "./.github-private",
-      "name": "|----GitHub Profile----|"
+      "name": "GitHub Profile"
     },
     {
       "path": "./ftn-site-vercel",
-      "name": "|----Next.js Vercel Web App----|"
+      "name": "Next.js App"
     },
     {
       "path": "./food-truck-api",
-      "name": "|----API (backend)----|"
+      "name": "Backend (API)"
     },
     {
       "path": "./docs",
-      "name": "|----Docs----|"
+      "name": "Docs"
     },
     {
       "path": "./FoodTruckNerdzSite",
-      "name": "|----Old Site (GitHub Pages)----|"
+      "name": "Old Website"
     }
   ],
   "settings": {
