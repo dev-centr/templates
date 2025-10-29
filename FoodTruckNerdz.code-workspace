@@ -2,27 +2,31 @@
   "folders": [
     {
       "path": ".",
-      "name": "Project Base"
+      "name": "Workspace Settings"
     },
     {
-      "path": "./.github-private",
+      "path": "../.github-private",
       "name": "GitHub Profile"
     },
     {
-      "path": "./ftn-site-vercel",
+      "path": "../ftn-site-vercel",
       "name": "Next.js App"
     },
     {
-      "path": "./food-truck-api",
+      "path": "../food-truck-api",
       "name": "Backend (API)"
     },
     {
-      "path": "./docs",
+      "path": "../docs",
       "name": "Docs"
     },
     {
-      "path": "./FoodTruckNerdzSite",
+      "path": "../FoodTruckNerdzSite",
       "name": "Old Website"
+    },
+    {
+      "path": "../roadmap-site",
+      "name": "Roadmap Site"
     }
   ],
   "settings": {
