@@ -1,0 +1,13 @@
+* xref:index.adoc[Workspace]
+* xref:guides/ssh-keys-setup.adoc[SSH keys setup (Windows)]
+* xref:guides/corepack-installation-helper.adoc[Corepack installation helper]
+* xref:guides/tool-hierarchy.adoc[Tool hierarchy]
+* xref:guides/why-use-corepack.adoc[Why use Corepack]
+* xref:product/food-truck-fan-features.adoc[Food Truck Fan features]
+* xref:product/food-truck-setup-process.adoc[Food Truck Setup Process]
+* xref:product/integrations.adoc[Platform integrations]
+* xref:product/pricing.adoc[Pricing]
+* xref:architecture/astro-stack-model.adoc[Framework Stack Model using Astro]
+* xref:dev/components.adoc[Dev: Components]
+* xref:dev/getting-started.adoc[Dev: Getting Started]
+

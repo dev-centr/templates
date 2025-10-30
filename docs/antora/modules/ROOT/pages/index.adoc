@@ -1,0 +1,6 @@
+= Workspace Docs
+
+Welcome to the FoodTruckNerdz workspace documentation hub.
+
+Use the navigation to explore guides and references.
+

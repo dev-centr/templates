@@ -1,0 +1,6 @@
+name: workspace
+title: Workspace
+version: master
+nav:
+  - modules/ROOT/nav.adoc
+
