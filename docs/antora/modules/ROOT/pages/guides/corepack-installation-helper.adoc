@@ -1,0 +1,58 @@
+= Corepack Installation Helper
+
+Corepack is a general purpose tool for installing and managing a project's package manager within the Node.js ecosystem.
+
+If you're a project creator, use the Leader workflow. If you're a developer joining a project, use the Follower workflow.
+
+== Preparation
+
+Due to an issue with outdated signatures in Corepack, update Corepack first:
+
+[source,pwsh]
+----
+npm install --global corepack@latest
+----
+
+== Leader workflow
+
+Run as Admin in project folder:
+
+[source,pwsh]
+----
+corepack enable
+----
+
+Set the desired package manager (examples):
+
+[source,pwsh]
+----
+corepack use pnpm@latest
+corepack use pnpm@latest-10
+corepack use pnpm@7.x
+corepack use pnpm@6.1
+corepack use yarn@stable
+----
+
+
+
+// Placeholder for image: installation options
+NOTE: Replace this placeholder with an updated image showing Corepack installation options and prompts for `corepack enable` and `corepack use`.
+
+== Follower Workflow
+
+Run as Admin in project folder:
+
+[source,pwsh]
+----
+corepack install
+----
+
+== After installation
+
+Install dependencies with pnpm:
+
+[source,pwsh]
+----
+pnpm install
+----
+
