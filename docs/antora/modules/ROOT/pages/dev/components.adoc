@@ -1,0 +1,9 @@
+= Components
+
+== Code Block
+
+[source,js]
+----
+console.log('Hello World');
+----
+

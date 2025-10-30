@@ -1,0 +1,10 @@
+= Getting Started
+
+Welcome to the docs! This component contains internal developer material.
+
+See also:
+
+* xref:dev/components.adoc[Components]
+* xref:guides/ssh-keys-setup.adoc[SSH keys setup]
+* xref:guides/corepack-installation-helper.adoc[Corepack installation]
+
