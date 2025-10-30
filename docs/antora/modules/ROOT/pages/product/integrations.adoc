@@ -1,0 +1,19 @@
+= Platform integrations
+
+== Facebook
+
+Integrate with Facebook to perform the following functions for a food truck's page:
+
+* Update profile information (business address, services, photos, categorization, etc.)
+* Display suggestions (Groups, Events, Likes)
+* Create posts (initial announcement, event check-ins)
+
+== Instagram
+
+* Update profile with missing information where possible
+* Post to Instagram and optionally suppress cross-posts
+
+== Square
+
+* Integrate with Square to pull menu data and update menu using the Catalog API
+
