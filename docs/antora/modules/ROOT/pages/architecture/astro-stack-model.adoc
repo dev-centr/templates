@@ -1,0 +1,12 @@
+= Framework Stack Model using Astro
+
+The following Mermaid diagrams outline an example stack using Astro.
+
+[,mermaid]
+----
+graph TD
+  %% See separate .mermaid source in repo for editable graph
+----
+
+Source: `framework stack model using astro.mermaid`.
+
