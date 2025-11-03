@@ -2,7 +2,11 @@
   "folders": [
     {
       "path": ".",
-      "name": "Workspace Settings"
+      "name": "Workspace Settings",
+      "settings": {
+        // Disable rust-analyzer for the workspace-settings folder (no Rust code here)
+        "rust-analyzer.enable": false
+      }
     },
     {
       "path": "../.github-private",
@@ -30,7 +34,13 @@
     },
     {
       "path": "../dev-setup-app",
-      "name": "Dev Setup App"
+      "name": "Dev Setup App",
+      "settings": {
+        // Enable rust-analyzer for this Rust project and configure it to use the project's target directory
+        "rust-analyzer.enable": true,
+        "rust-analyzer.cargo.targetDir": "${workspaceFolder}/src-tauri/target",
+        "rust-analyzer.checkOnSave.enable": true
+      }
     }
   ],
   "settings": {
@@ -68,7 +78,9 @@
     },
     "git.closeDiffOnOperation": true, // This closes the code 'diff' after you add it to a commit
     "githubPullRequests.ignoredPullRequestBranches": ["main"],
-    "powershell.cwd": "Project Base"
+    "powershell.cwd": "${workspaceFolder}/..", // sets the default current working directory (cwd) to the parent folder in VSCode's terminal
+    // Configure rust-analyzer to only work in actual Rust projects and store cache in project folders
+    "rust-analyzer.checkOnSave.enable": false // Disable globally; enable per-folder for Rust projects
   },
   "extensions": {
     "recommendations": [
