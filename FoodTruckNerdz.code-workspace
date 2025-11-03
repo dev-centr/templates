@@ -27,6 +27,10 @@
     {
       "path": "../roadmap-site",
       "name": "Roadmap Site"
+    },
+    {
+      "path": "../dev-setup-app",
+      "name": "Dev Setup App"
     }
   ],
   "settings": {
@@ -47,10 +51,10 @@
       "MD013": false, // Suppress the 80 character per line style recommendation
       "MD033": false // Allow HTML
     },
+    "asciidoc.preview.openLinksToAsciidocFiles": "inEditor",
     "prettier.proseWrap": "never", // Tells Prettier to never hard-wrap Markdown
     "[markdown]": {
       "editor.wordWrap": "on", // markdown setting to display text wrapping
-      "editor.defaultFormatter": "yzhang.markdown-all-in-one",
       "editor.codeActionsOnSave": {
         "source.fixAll.markdownlint": "explicit" // enables markdownlint to autoformat on save, after markdown-all-in-one
       }
@@ -68,12 +72,10 @@
   },
   "extensions": {
     "recommendations": [
-      "yzhang.markdown-all-in-one", // Markdown documentation formatter and toolset. Use like normal formatter.
-      // This plugin lets you apply bold, italic, strikethrough, and tasklist formatting to markdown with key combos.
-      // You can also pretty-format tables with a key combo, after creating them.
       "dbaeumer.vscode-eslint", // ESLint is the EcmaScript Linter. ES is the official JavaScript specification. Linter checks syntax and gripes at you about errors or warnings.
       "loiane.ts-extension-pack", // TypeScript extension pack, formatting, syntax highlighting, etc.
       "esbenp.prettier-vscode", // Code formatter
+      "asciidoctor.asciidoctor-vscode", // ASCIIdoc file plugin. A Markdown replacement.
       "nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
       "marcbruederlin.next-icons", // Next.js icon-set for VSCode's file tree interface (folder, file types, etc)
       "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets to quickly populate new next files. Most other snippet plugins are outdated.
