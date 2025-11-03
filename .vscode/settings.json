@@ -1,0 +1,51 @@
+/*
+COMMON SETTINGS
+Shared between different .code-workspace files
+
+- This repository must be listed in the .code-workspace file's "folders" block to be included.
+
+Do not list folders in this file.
+Put common extensions in the `extensions.json` file.
+*/
+
+{
+  "settings": {
+    // These are our team's formatting guidelines. Please use them.
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.wrappingIndent": "same", // makes lists wrap on screen with an indent
+    // The following folders are hidden from list of files in Base repository in VSCode
+    "files.exclude": {
+      "**/node_modules": true, // hidden to improve search performance in VScode
+      "**/.git": true, // hidden to remove visual clutter
+      "**/.next": true // hidden to improve search performance in VScode
+    },
+    "markdownlint.config": {
+      "default": true,
+      "MD007": { "indent": 2 },
+      "MD013": false, // Suppress the 80 character per line style recommendation
+      "MD033": false // Allow HTML
+    },
+    "asciidoc.preview.openLinksToAsciidocFiles": "inEditor",
+    "prettier.proseWrap": "never", // Tells Prettier to never hard-wrap Markdown
+    "[markdown]": {
+      "editor.wordWrap": "on", // markdown setting to display text wrapping
+      "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "explicit" // enables markdownlint to autoformat on save, after markdown-all-in-one
+      }
+    },
+    "markdown.extension.list.indentationSize": "inherit", // make Markdown All In One plugin adhere to bullet tab spacing
+    "scm.alwaysShowRepositories": true,
+    "scm.providerCountBadge": "auto",
+    "workbench.colorCustomizations": {
+      "mergeEditor.conflict.unhandledFocused.border": "#00945b",
+      "mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
+    },
+    "git.closeDiffOnOperation": true, // This closes the code 'diff' after you add it to a commit
+    "githubPullRequests.ignoredPullRequestBranches": ["main"],
+    "powershell.cwd": "${workspaceFolder}/..", // sets the default current working directory (cwd) to the parent folder in VSCode's terminal
+    // Configure rust-analyzer to only work in actual Rust projects and store cache in project folders
+    "rust-analyzer.checkOnSave.enable": false // Disable globally; enable per-folder for Rust projects
+  }
+}
