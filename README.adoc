@@ -1,0 +1,118 @@
+= Workspaces Repository
+
+This repository provides workspace templates and configuration files for FoodTruckNerds projects. It contains both template files that should be copied to new repositories and active configuration files that can be included in workspace definitions.
+
+== Purpose
+
+The `workspaces` repository serves as a centralized location for:
+
+* *Workspace Templates* – Reusable workspace configurations for different workflows
+* *Extension Recommendations* – VS Code extension recommendations organized by workflow
+* *Template Files* – Common files (`.gitattributes`, `.gitignore`, `.hintrc`, `FUNDING.yml`) that should be copied to new repositories
+* *Documentation* – Setup and configuration documentation for common tools and workflows
+
+== Repository Structure
+
+[source,text]
+----
+workspaces/
+├── templates/              # Template folders for different workflows
+│   ├── common/             # Common extensions and template files
+│   ├── javascript/         # JavaScript/TypeScript workflow
+│   ├── next.js/            # Next.js specific workflow
+│   ├── python/             # Python workflow
+│   ├── rust/               # Rust workflow
+│   └── global.code-workspace # Global workspace for all repos
+├── docs/                   # Documentation (Antora format)
+└── README.adoc             # This file
+----
+
+== Template Folders
+
+Each template folder in `templates/` serves dual purposes.
+
+TIP: Every template ships with its own `README.adoc` inside the folder. Open it for a quick summary of what the template config does, which extensions it includes, and how to add it to another workspace.
+
+=== Template Files (Copy to New Repos)
+
+Files that should be copied to new repositories:
+
+* `.gitattributes` – Git line ending configuration
+* `.gitignore` – Git ignore patterns
+* `.hintrc` – Webhint configuration
+* `.github/FUNDING.yml` – GitHub funding configuration
+
+=== Active Configuration Files (Include in Workspaces)
+
+Files that can be included in workspace files:
+
+* `.vscode/extensions.json` – VS Code extension recommendations for that workflow
+
+NOTE: These extensions are sourced from the community-run https://open-vsx.org[OpenVSX marketplace], so they can be installed in Cursor and other third-party VS Code forks.
+
+== Available Templates
+
+* `common/` – Common extensions and template files for all projects (docs, git, media tools)
+* `javascript/` – JavaScript/TypeScript workflow extensions (Prettier + Prettier ESLint)
+* `next.js/` – Next.js specific extensions (assistant, icons, snippets)
+* `python/` – Python workflow extensions (Ruff formatter)
+* `rust/` – Rust workflow extensions (future tooling)
+
+== Usage
+
+=== Including a Template in Your Workspace
+
+To use a template in your project workspace, include the template folder in your `.code-workspace` file:
+
+[source,json]
+----
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "my-project"
+    },
+    {
+      "path": "../workspaces/templates/next.js",
+      "name": "next.js"
+    }
+  ]
+}
+----
+
+When included, the template folder will:
+
+* Prompt installation of recommended extensions from `.vscode/extensions.json`
+* Appear in the workspace tree with the template name (for example, `next.js`) to make its purpose explicit
+
+=== Copying Template Files
+
+When creating a new repository, copy the relevant template files from a template folder:
+
+* Copy `.gitattributes`, `.gitignore`, `.hintrc` to your repository root
+* Copy `.github/FUNDING.yml` to `.github/FUNDING.yml` in your repository
+
+== Important Notes
+
+=== Settings Configuration
+
+IMPORTANT: The `.vscode/settings.json` file does *not* automatically apply to other repositories when included in a workspace. VS Code only uses extensions from `extensions.json` when a folder is included in the workspace.
+
+To share settings across repositories, embed them directly in your project’s `.code-workspace` file or copy workspace file templates from the `templates/` folder.
+
+=== Template Naming Convention
+
+Template folders are named after the technology or workflow they support (for example, `next.js`, `python`, `javascript`). This ensures:
+
+* The folder name clearly indicates the technology or workflow
+* It is clear that the folder is a template configuration
+* Users understand the purpose when they see it in their workspace
+
+== Global Workspace
+
+The `templates/global.code-workspace` file provides a workspace that includes all FoodTruckNerdz repositories, useful for running AI commands across the entire codebase.
+
+== Documentation
+
+For complete setup instructions, workspace configuration, and development guidelines, see the https://foodtrucknerds.github.io/docs[Antora documentation].
+
