@@ -1,6 +1,8 @@
 = Workspaces Repository
 
-This repository provides workspace templates and configuration files for FoodTruckNerds projects. It contains both template files that should be copied to new repositories and active configuration files that can be included in workspace definitions.
+This repository provides workspace templates and configuration files for FoodTruckNerds projects. Clone this repository to your machine to take advantage of the extension recommendations for your project type. The other repositories' .code-workspace files hook into this repository to load the extension recommendations in VSCode.
+
+This repository contains both template files that should be copied when creating a new repository and active configuration files that can be included in workspace definitions.
 
 == Purpose
 
