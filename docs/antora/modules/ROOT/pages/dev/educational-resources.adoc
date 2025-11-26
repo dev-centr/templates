@@ -1,0 +1,18 @@
+= Educational Resources
+
+* link:https://www.youtube.com/watch?v=fxplz32rgEQ[Chrome Dev Tools 101: Beginner's Guide]
+
+* link:https://www.youtube.com/watch?v=HosPml1qkrg[Guide to Git Merge Conflicts]
+
+* link:https://stevebennett.me/2012/02/24/10-things-i-hate-about-git/[10 things I hate about Git | Steve Bennett]
+
+* link:https://www.youtube.com/@t3dotgg[Theo (t3 chat)] - Web developer (former back-end dev). Learn Next.js, Convex, AI, etc.
+
+* link:https://www.youtube.com/@TsodingDaily[Tsoding Daily] - Dev philosophy, raw, unfiltered
+
+* link:https://youtu.be/mN--sGH97dY?si=9CMn4EZUIZi6Qncb[Understanding SVGs] - Learn how to write SVGs and animate the web using better format than html/css. link:https://www.joshwcomeau.com/svg/friendly-introduction-to-svg/[Article version].
+
+== Philosophy
+
+* link:https://www.youtube.com/watch?v=f5gsdg9-JTw[The Divided Brain] - How lateralization of the brain contributes to system engineering and design. We aim to use more of the right hemisphere in our engineering and UI designs.
+

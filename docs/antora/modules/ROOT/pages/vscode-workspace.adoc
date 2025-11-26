@@ -1,0 +1,89 @@
+= VSCode Workspace Configuration
+
+The `workspaces` repository provides workspace templates and configuration files for FoodTruckNerds projects. It contains both template files that should be copied to new repositories and active configuration files that can be included in workspace files.
+
+== Repository Structure
+
+The `workspaces` repository is organized as follows:
+
+* Root level: Files specific to the workspaces repository itself
+* `templates/`: Contains template folders for different workflows and configurations
+
+== Workspace Templates
+
+The `templates/` folder contains template folders that serve dual purposes:
+
+TIP: Each template folder now includes a `README.adoc` with usage notes, extension lists, and workspace instructions. Open the README directly inside `templates/{name}` when you need a refresher on what a template provides.
+
+=== Template Files (Copy to New Repos)
+
+Each template folder contains files that should be copied to new repositories:
+
+* `.gitattributes` - Git line ending configuration
+* `.gitignore` - Git ignore patterns
+* `.hintrc` - Webhint configuration
+* `.github/FUNDING.yml` - GitHub funding configuration
+
+=== Active Configuration Files (Include in Workspaces)
+
+Each template folder also contains active configuration files that can be included in workspace files:
+
+* `.vscode/extensions.json` - VSCode extension recommendations for that workflow
+
+=== Available Templates
+
+* `common/` - Common extensions and template files for all projects (docs, git, media tools)
+* `javascript/` - JavaScript/TypeScript workflow extensions (Biome, dprint)
+* `next.js/` - Next.js specific extensions (Next.js assistant, icons, snippets)
+* `python/` - Python workflow extensions (Ruff formatter)
+* `rust/` - Rust workflow extensions
+
+== Using Templates in Workspaces
+
+To use a template in your project workspace, include the template folder in your `.code-workspace` file:
+
+[source,json]
+----
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "my-project"
+    },
+    {
+      "path": "../workspaces/templates/next.js",
+      "name": "next.js"
+    }
+  ]
+}
+----
+
+When included, the template folder will:
+* Prompt installation of recommended extensions from `.vscode/extensions.json`
+* Appear in the workspace tree with the template name (e.g., "next.js") to make its purpose explicit
+
+== Global Workspace
+
+The `templates/global.code-workspace` file provides a workspace that includes all FoodTruckNerdz repositories, useful for running AI commands across the entire codebase.
+
+== Settings Configuration
+
+**Important:** The `.vscode/settings.json` file does NOT automatically apply to other repositories when included in a workspace. VS Code only uses extensions from `extensions.json` when a folder is included in the workspace.
+
+To share settings across repositories, embed them directly in your project's `.code-workspace` file or copy workspace file templates from the `templates/` folder.
+
+== Creating New Templates
+
+When creating a new template folder:
+
+1. Create a folder named after the technology or workflow (e.g., `{workflow}/`) in `templates/`
+2. Add `.vscode/extensions.json` with workflow-specific extensions
+3. Optionally add template files (`.gitattributes`, `.gitignore`, etc.) that should be copied to new repos
+4. Optionally add a workspace file template (`.code-workspace`) that can be copied and customized
+
+[IMPORTANT]
+====
+**Extension Sourcing:** We only list extensions that are available on the community-run link:https://open-vsx.org[OpenVSX marketplace]. That guarantees they can be installed in Cursor and other third-party VS Code forks without extra setup.
+====
+
+Template folders are named after the technology or workflow they support, making it clear what the template is for when seen in the workspace.

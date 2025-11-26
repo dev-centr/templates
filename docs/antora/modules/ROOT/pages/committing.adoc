@@ -1,0 +1,29 @@
+= Committing Code
+
+Once you are ready to commit your code:
+
+== Steps
+
+1. Make multiple small commits and be descriptive about your changes. Commit them in small batches by picking a few related files to add to each commit. You can make several commits locally and then push/sync the changes up to GitHub all at once. VSCode has a 'sync' button that attempts to `pull` then `push` code. If the pull conflicts with your code, you will have to resolve the conflict in the merge editor. The merge editor is not the same as the diff viewer.
+2. Sync your changes to the GitHub. In order to submit code, you must xref:guides/ssh-keys-setup.adoc[set up your local SSH key] first.
+
+== VSCode SSH Key Path Bug
+
+[WARNING]
+====
+**VSCode SSH Key Path Bug:** If you are using VSCode and experiencing repeated password prompts for repositories synced with SSH URLs, ensure your local SSH key file is *not* located in a path that contains spaces. VSCode currently has a bug that prevents it from correctly reading SSH keys from paths with spaces, leading to continuous password requests. For more details, refer to the bug report: https://github.com/microsoft/vscode/issues/203128
+====
+
+If this is not the problem, make sure your git credential helper is set. Use `git config credential.helper` to check if it is set. It should have been set at the system level for you when you installed git. If it is broken, set it either locally (repo), globally (user), or system-wide (OS) with the following in Windows, macOS, or Linux:
+
+* `git config --local credential.helper manager`
+* `git config --global credential.helper manager`
+* `git config --system credential.helper manager` as Admin
+
+or if it is not already installed on macOS:
+
+* `brew install --cask git-credential-manager`
+
+If you need to unset one of these levels, you must delete any lines mentioning the setting (`helper=blah`) from its config file. To find the correct file, you must check what level(s) are configured and where to find the settings files using `git config --show-origin credential.helper`. Please note there are no examples on the internet using this, but this is the correct solution. The official git-config https://git-scm.com/docs/git-config[documentation] does not specifically mention this, but the functionality is implied.
+
+For a full in-depth explanation of config levels, see this article: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Where-system-global-and-local-Windows-Git-config-files-are-saved[System, global, and local Git config files on Windows and Linux]

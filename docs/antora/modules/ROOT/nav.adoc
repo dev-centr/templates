@@ -1,4 +1,7 @@
 * xref:index.adoc[Workspace]
+* xref:getting-started.adoc[Getting Started]
+* xref:committing.adoc[Committing Code]
+* xref:vscode-workspace.adoc[VSCode Workspace]
 * xref:guides/ssh-keys-setup.adoc[SSH keys setup (Windows)]
 * xref:guides/corepack-installation-helper.adoc[Corepack installation helper]
 * xref:guides/tool-hierarchy.adoc[Tool hierarchy]
@@ -10,4 +13,7 @@
 * xref:architecture/astro-stack-model.adoc[Framework Stack Model using Astro]
 * xref:dev/components.adoc[Dev: Components]
 * xref:dev/getting-started.adoc[Dev: Getting Started]
+* xref:dev/repository-structure.adoc[Dev: Repository Structure]
+* xref:dev/development-tools.adoc[Dev: Development Tools]
+* xref:dev/educational-resources.adoc[Dev: Educational Resources]
 

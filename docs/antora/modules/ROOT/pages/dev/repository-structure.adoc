@@ -1,0 +1,12 @@
+= Repository Structure
+
+* `ftn-site-vercel` - Web App
+
+* `FoodTruckNerdzSite` - Original web app prototype
+
+* `food-truck-api` - Zuplo API for original prototype
+
+* `docs` - Extended Documentation for all projects
+
+* Our future app will involve a cross-platform phone app, likely in Flutter or React-Native.
+

@@ -1,38 +1,28 @@
-= Workspace Docs
+= FoodTruckNerdz Developer Instructions
 
-Welcome to the FoodTruckNerdz workspace documentation hub.
+This is the Base repository. It holds instructions and support files for setting up your local machine and committing code.
 
-Use the navigation to explore guides and references.
+[IMPORTANT]
+====
+- If you are working on something that could break things, create a new code branch in repositories before you start editing.
+- If you create a new repository/project, register it to the `.gitignore`'s exclusions list in the base repository.
+====
 
-++++
-<details>
-<summary>Repository Structure</summary>
-++++
+== Why?
 
-include::dev/repository-structure.adoc
+- The `FoodTruckNerdz.code-workspace` file is stored here, instead of in the individual projects, so that the project repositories are kept clean and separate from the VSCode settings.
+- If we provided `.code-workspace` files on a per-project basis, then AI plugins for VSCode would not have a way to work on all projects simultaneously.
 
-++++
-</details>
-++++
+== Details
 
-++++
-<details>
-<summary>Development Tools</summary>
-++++
+- The `FoodTruckNerdz.code-workspace` file configures VSCode to display labels for the different repositories.
+- Git is configured to exclude the other repositories in the `.gitignore` file, so when you sync changes made in the child repositories, they do not get added to the Base accidentally. The .gitignore file contains all repository names in it to ensure this.
+- We provide a list of suggested plugins in the "extensions" section in `FoodTruckNerdz.code-workspace`.
 
-include::dev/development-tools.adoc
+[WARNING]
+====
+If you accidentally sync a child repository to this one, add the repository to the `.gitignore` file to prevent it from syncing in the future, commit that to the repository, and then fix the accidentaly commit by using `git revert` or `git cherry-pick` in a source control GUI or via the command line to fix it. If using "cherry-pick", you must pick the commit *before* accidentally committing, not the commit where you committed.
 
-++++
-</details>
-++++
-
-++++
-<details>
-<summary>Educational Resources</summary>
-++++
-
-include::dev/educational-resources.adoc
-
-++++
-</details>
-++++
+* `git revert` advantage: Simplicity for collaborators: If others have already pulled the accidental commit, git revert is the least disruptive way to fix it. They just pull the new revert commit, and their history remains linear and consistent.
+* `git cherry-pick` advantage: removes large files from history completely. Use this if you committed large files or a large quantity of small files (like accidentally including the `node_modules` directory).
+====
