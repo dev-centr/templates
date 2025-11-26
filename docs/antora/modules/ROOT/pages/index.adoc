@@ -4,3 +4,35 @@ Welcome to the FoodTruckNerdz workspace documentation hub.
 
 Use the navigation to explore guides and references.
 
+++++
+<details>
+<summary>Repository Structure</summary>
+++++
+
+include::dev/repository-structure.adoc
+
+++++
+</details>
+++++
+
+++++
+<details>
+<summary>Development Tools</summary>
+++++
+
+include::dev/development-tools.adoc
+
+++++
+</details>
+++++
+
+++++
+<details>
+<summary>Educational Resources</summary>
+++++
+
+include::dev/educational-resources.adoc
+
+++++
+</details>
+++++

@@ -3,7 +3,7 @@
 }
 
 /*
-A .hintrc file is a configuration file used by webhint, a linting tool that 
+.hintrc is a configuration file used by webhint, a linting tool that 
 helps you improve the quality, accessibility, and performance of your websites.
 
 The extends property with the value "development" means that your .hintrc file 
