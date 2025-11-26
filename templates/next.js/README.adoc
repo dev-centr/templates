@@ -1,0 +1,28 @@
+= Next.js Template
+
+The `next.js` template builds on the JavaScript baseline and adds editor helpers tuned for the FoodTruckNerds Next.js apps (like `ftn-site-vercel`). Include it whenever you are working on Next.js 13+ projects that need modern file-based routing, server actions, and component snippets.
+
+== Included extensions
+
+All recommendations come from the community-run OpenVSX marketplace, so they install cleanly in Cursor and other VS Code forks:
+
+* `nrjdalal.nextjs-assistant` – in-editor guidance for Next.js conventions.
+* `marcbruederlin.next-icons` – Next.js-aware file icons for the VS Code explorer.
+* `HareeshBhittam.next-js-snippets-latest` – snippets for the latest Next.js patterns (app router, server components, etc.).
+* `kristiyanvelkov.nextjs-file-gelenator` – quick scaffolding for common Next.js file layouts.
+
+== How to include it
+
+[source,json]
+----
+{
+  "folders": [
+    { "path": ".", "name": "ftn-site-vercel" },
+    { "path": "../workspaces/templates/javascript", "name": "javascript" },
+    { "path": "../workspaces/templates/next.js", "name": "next.js" }
+  ]
+}
+----
+
+Add the template folder next to your project and the `javascript` template. That keeps your core formatter/linter rules (from `javascript`) intact while layering in the Next.js-specific extensions defined here. Because the configuration lives inside the template folder, updates land automatically everywhere the template is referenced—no copying required.
+

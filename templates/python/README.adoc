@@ -1,0 +1,23 @@
+= Python Template
+
+Use the `python` template when you want Ruff-based formatting and linting for API prototypes, data scripts, or automation tooling. It complements the `common` template by adding the fast Ruff toolchain everywhere you edit Python files.
+
+== Included extension
+
+* `charliermarsh.ruff` – Formatter, linter, and import organizer powered by Ruff. Published on OpenVSX so it works in Cursor and other VS Code forks.
+
+== Recommended workspace composition
+
+[source,json]
+----
+{
+  "folders": [
+    { "path": ".", "name": "python-project" },
+    { "path": "../workspaces/templates/common", "name": "common" },
+    { "path": "../workspaces/templates/python", "name": "python" }
+  ]
+}
+----
+
+The `common` template provides the shared docs/git tooling, while the `python` template adds language-aware formatting. Keep both folders referenced in your `.code-workspace` so future updates flow automatically, and copy Ruff config files into your project only when you need to customize rules locally.
+

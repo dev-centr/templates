@@ -1,0 +1,6 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-funding.json": "/.github/FUNDING.yml"
+    // Other schemas...
+  }
+}

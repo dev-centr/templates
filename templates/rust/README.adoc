@@ -1,0 +1,24 @@
+= Rust Template
+
+The `rust` template is reserved for our future Rust developer tooling. Keeping this folder referenced in workspaces now makes it easy to roll out shared formatter/linter settings (rust-analyzer, cargo tools, etc.) once they are finalized.
+
+== Current status
+
+* The template does not ship extensions or settings yet.
+* You can still include the folder in `.code-workspace` files today so it is visible when new tooling is added.
+
+== How to include it
+
+[source,json]
+----
+{
+  "folders": [
+    { "path": ".", "name": "rust-project" },
+    { "path": "../workspaces/templates/common", "name": "common" },
+    { "path": "../workspaces/templates/rust", "name": "rust (future tooling)" }
+  ]
+}
+----
+
+Once Rust-specific extensions are available on OpenVSX, they will be added to `.vscode/extensions.json` inside this folder, and every workspace that already references it will pick up the new tooling automatically.
+

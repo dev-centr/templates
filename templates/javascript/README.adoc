@@ -1,0 +1,26 @@
+= JavaScript / TypeScript Template
+
+The `javascript` template layers JavaScript-specific tooling on top of the shared `common` configuration. Use it whenever you need consistent formatting, linting, and workspace ergonomics for Node, browser, or hybrid TypeScript projects.
+
+== What it provides
+
+* Prettier + Prettier-ESLint formatting (via the `javascript.code-workspace` settings) for `.js`, `.jsx`, `.ts`, and `.tsx`.
+* Opinionated workspace defaults that hide noisy folders like `node_modules`, `.git`, and `.next` while keeping Git status scoped to your project.
+* A ready-to-copy VS Code workspace file (`javascript.code-workspace`) you can use as a starting point for new repositories.
+
+The template does not currently ship extra extension recommendations—the shared ones live in `templates/common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
+
+== How to include it
+
+[source,json]
+----
+{
+  "folders": [
+    { "path": ".", "name": "my-project" },
+    { "path": "../workspaces/templates/javascript", "name": "javascript" }
+  ]
+}
+----
+
+Add the template folder alongside your project folder in `.code-workspace` files (or Cursor’s workspace UI). VS Code will automatically load the formatter/linting settings and expose the template folder so that its `.vscode` configuration stays up to date without copying files around.
+

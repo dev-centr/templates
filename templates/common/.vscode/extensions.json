@@ -1,0 +1,24 @@
+{
+  // NOTE: These extensions all come from the community-run OpenVSX marketplace (https://open-vsx.org)
+  // so they can be installed in Cursor and other third-party VS Code forks.
+  "recommendations": [
+    // Formatter
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+
+    // Markdown
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting", // Mermaid syntax support for Markdown files
+    "bierner.markdown-mermaid", // Renders Mermaid diagrams in markdown previews
+
+    // Asciidoc
+    "asciidoctor.asciidoctor-vscode", // ASCIIdoc format plugin. A better alternative to Markdown for technical writing.
+
+    // Media
+    "henoc.svgeditor", // SVG graphics literal editor (view the text), and visual editor
+
+    // git
+    "github.vscode-pull-request-github", // GitHub augmentations. This lets you see Pull Requests and Issues from GitHub
+    "mhutchie.git-graph", // lets you view git graph in bigger view
+    "eamodio.gitlens" // lets you search the history of the repository's files using string search
+  ]
+}

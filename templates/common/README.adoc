@@ -1,0 +1,29 @@
+= Common Template
+
+The `common` workspace template provides baseline tooling that every FoodTruckNerds repository can rely on. Add it to any VS Code workspace when you want the shared documentation, git, and formatting helpers without copying files into your project.
+
+== When to include it
+
+* You are working in a multi-repo workspace and want consistent Git tooling (GitHub Pull Requests, GitLens, Git Graph).
+* You need the shared documentation stack (Prettier, Prettier ESLint, Mermaid, AsciiDoc, SVG editor).
+* You want YAML schema hints for `.github/FUNDING.yml` and other shared automation files.
+
+== Included configuration
+
+* `.vscode/extensions.json` – curated list of cross-cutting extensions. They all ship on the community-run OpenVSX marketplace, so they install cleanly in Cursor and other VS Code forks.
+* `.vscode/settings.json` – shared YAML schema mappings and other base tweaks that are safe to load alongside any repository.
+
+== How to add it to a workspace
+
+[source,json]
+----
+{
+  "folders": [
+    { "path": ".", "name": "my-project" },
+    { "path": "../workspaces/templates/common", "name": "common" }
+  ]
+}
+----
+
+Including the folder keeps the template configuration “live,” so updates to the shared tooling flow into every workspace automatically. If you need to copy a file (for example `.github/FUNDING.yml`), open the template folder directly and copy the file into your repo instead of editing it in place.
+
