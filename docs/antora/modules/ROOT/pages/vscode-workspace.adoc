@@ -13,7 +13,7 @@ The `workspaces` repository is organized as follows:
 
 The `templates/` folder contains template folders that serve dual purposes:
 
-TIP: Each template folder now includes a `README.adoc` with usage notes, extension lists, and workspace instructions. Open the README directly inside `templates/{name}` when you need a refresher on what a template provides.
+TIP: Each template folder now includes a `README.adoc` with usage notes, extension lists, and workspace instructions. Open the README directly inside `templates/+{name}+` when you need a refresher on what a template provides.
 
 === Template Files (Copy to New Repos)
 
@@ -76,7 +76,7 @@ To share settings across repositories, embed them directly in your project's `.c
 
 When creating a new template folder:
 
-1. Create a folder named after the technology or workflow (e.g., `{workflow}/`) in `templates/`
+1. Create a folder named after the technology or workflow (e.g., `+{workflow}+/`) in `templates/`
 2. Add `.vscode/extensions.json` with workflow-specific extensions
 3. Optionally add template files (`.gitattributes`, `.gitignore`, etc.) that should be copied to new repos
 4. Optionally add a workspace file template (`.code-workspace`) that can be copied and customized

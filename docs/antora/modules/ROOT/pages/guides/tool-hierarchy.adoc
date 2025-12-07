@@ -13,5 +13,4 @@ Package managers install packages and make sure that incompatible packages are n
 * program < package < package manager < package manager manager
 ** Example: myapp < ai < pnpm < Corepack
 
-More docs: xref:why-use-corepack.adoc[Why use Corepack]
-
+More docs: xref:guides/why-use-corepack.adoc[Why use Corepack]
