@@ -1,33 +1,47 @@
 {
-  "folders": [
-    {
-      "path": "."
-    }
-  ],
-  "settings": {
-    // Prevent VS Code from automatically detecting all git repos in the workspace
-    "git.autoRepositoryDetection": false,
-    
-    // Standard formatting settings
-    "editor.tabSize": 2,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    
-    // Language specific settings
-    "[asciidoc]": {
-      "editor.wordWrap": "on"
-    },
-    "[markdown]": {
-      "editor.wordWrap": "on"
-    }
-  },
-  "extensions": {
-    "recommendations": [
-      "asciidoctor.asciidoctor-vscode",
-      "esbenp.prettier-vscode",
-      "rvest.vs-code-prettier-eslint",
-      "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-      "bierner.markdown-mermaid",
-    ]
-  }
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// Prevent VS Code from automatically detecting all git repos in the workspace
+		"git.autoRepositoryDetection": false,
+
+		"files.exclude": {
+			"**/.git": false
+		},
+
+		// Standard formatting settings
+		"editor.tabSize": 2,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+		// Language specific settings
+		"[asciidoc]": {
+			"editor.wordWrap": "on"
+		},
+		"[markdown]": {
+			"editor.wordWrap": "on"
+		},
+		"[json]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[jsonc]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[code-workspace]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"asciidoctor.asciidoctor-vscode",
+			"esbenp.prettier-vscode",
+			"rvest.vs-code-prettier-eslint",
+			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+			"bierner.markdown-mermaid",
+			"biomejs.biome"
+		]
+	}
 }
