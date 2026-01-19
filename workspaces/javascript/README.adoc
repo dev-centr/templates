@@ -8,7 +8,7 @@ The `javascript` template layers JavaScript-specific tooling on top of the share
 * Opinionated workspace defaults that hide noisy folders like `node_modules`, `.git`, and `.next` while keeping Git status scoped to your project.
 * A ready-to-copy VS Code workspace file (`javascript.code-workspace`) you can use as a starting point for new repositories.
 
-The template does not currently ship extra extension recommendations—the shared ones live in `templates/common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
+The template does not currently ship extra extension recommendations—the shared ones live in `workspaces/common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
 
 == How to include it
 
@@ -17,7 +17,7 @@ The template does not currently ship extra extension recommendations—the share
 {
   "folders": [
     { "path": ".", "name": "my-project" },
-    { "path": "../workspaces/templates/javascript", "name": "javascript" }
+    { "path": "../templates/workspaces/javascript", "name": "javascript" }
   ]
 }
 ----

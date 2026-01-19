@@ -1,0 +1,27 @@
+= Rust Template
+
+The `rust` template provides shared Rust developer tooling configuration. Including this folder in workspaces ensures consistent extension recommendations and deprecations across all Rust projects.
+
+NOTE: Only extensions available on https://open-vsx.org[OpenVSX] are recommended. Extensions not published to OpenVSX must not be added to this template, in order to be compatible with non-Microsoft-owned forks of VSCode.
+
+== Current status
+
+* Recommends `rust-lang.rust-analyzer` (the actively maintained Rust extension, available on OpenVSX).
+* Deprecates `rust-lang.rust` (the legacy extension, no longer maintained).
+* You can include this folder in `.code-workspace` files to pick up shared tooling automatically.
+
+== How to include it
+
+[source,json]
+----
+{
+  "folders": [
+    { "path": ".", "name": "rust-project" },
+    { "path": "../templates/workspaces/common", "name": "common" },
+    { "path": "../templates/workspaces/rust", "name": "rust (future tooling)" }
+  ]
+}
+----
+
+Extensions are configured in `.vscode/extensions.json` inside this folder. Any workspace that references this template will automatically pick up the extension recommendations and deprecations. Before adding new extensions, verify they are available on https://open-vsx.org[OpenVSX].
+

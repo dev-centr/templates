@@ -13,8 +13,8 @@ Use the `python` template when you want Ruff-based formatting and linting for AP
 {
   "folders": [
     { "path": ".", "name": "python-project" },
-    { "path": "../workspaces/templates/common", "name": "common" },
-    { "path": "../workspaces/templates/python", "name": "python" }
+    { "path": "../templates/workspaces/common", "name": "common" },
+    { "path": "../templates/workspaces/python", "name": "python" }
   ]
 }
 ----

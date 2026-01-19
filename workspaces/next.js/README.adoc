@@ -1,6 +1,6 @@
 = Next.js Template
 
-The `next.js` template builds on the JavaScript baseline and adds editor helpers tuned for the FoodTruckNerds Next.js apps (like `ftn-site-vercel`). Include it whenever you are working on Next.js 13+ projects that need modern file-based routing, server actions, and component snippets.
+The `next.js` template builds on the JavaScript baseline and adds editor helpers tuned for Next.js apps. Include it whenever you are working on Next.js 13+ projects that need modern file-based routing, server actions, and component snippets.
 
 == Included extensions
 
@@ -17,9 +17,9 @@ All recommendations come from the community-run OpenVSX marketplace, so they ins
 ----
 {
   "folders": [
-    { "path": ".", "name": "ftn-site-vercel" },
-    { "path": "../workspaces/templates/javascript", "name": "javascript" },
-    { "path": "../workspaces/templates/next.js", "name": "next.js" }
+    { "path": ".", "name": "nextjs-project" },
+    { "path": "../templates/workspaces/javascript", "name": "javascript" },
+    { "path": "../templates/workspaces/next.js", "name": "next.js" }
   ]
 }
 ----

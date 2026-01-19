@@ -1,6 +1,6 @@
 = Common Template
 
-The `common` workspace template provides baseline tooling that every FoodTruckNerds repository can rely on. Add it to any VS Code workspace when you want the shared documentation, git, and formatting helpers without copying files into your project.
+The `common` workspace template provides baseline tooling that every repository can rely on. Add it to any VS Code workspace when you want the shared documentation, git, and formatting helpers without copying files into your project.
 
 == When to include it
 
@@ -20,7 +20,7 @@ The `common` workspace template provides baseline tooling that every FoodTruckNe
 {
   "folders": [
     { "path": ".", "name": "my-project" },
-    { "path": "../workspaces/templates/common", "name": "common" }
+    { "path": "../templates/workspaces/common", "name": "common" }
   ]
 }
 ----
