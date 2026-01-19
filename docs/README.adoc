@@ -1,0 +1,34 @@
+= Templates Documentation
+:description: Antora documentation source for the Standard Project Templates.
+
+This directory contains the documentation for the `templates` repository, structured for use with the Antora documentation site generator.
+
+== Overview
+
+The documentation covers:
+
+* *Setup Guides* – How to configure development tools (Corepack, SSH keys).
+* *Workflow Documentation* – Committing standards and git branching strategies.
+* *Workspace Configuration* – Details on VS Code workspace settings and extensions.
+
+== Structure
+
+The documentation follows the standard Antora component structure:
+
+* `antora.yml` – Component metadata and navigation configuration.
+* `modules/ROOT/` – The primary module for template documentation.
+** `nav.adoc` – The navigation sidebar structure.
+** `pages/` – The documentation content files (`.adoc`).
+** `images/` – Screenshots and diagrams used in the docs.
+
+== Contributing
+
+When adding new templates or workflows, ensure that corresponding documentation is added or updated in this directory.
+
+1. Create a new `.adoc` file in `modules/ROOT/pages/`.
+2. Add the file to `modules/ROOT/nav.adoc` to make it visible in the sidebar.
+3. Verify that any images are placed in `modules/ROOT/images/`.
+
+== Resources
+
+For the live documentation site, visit link:https://the-dev-center.github.io/docs[Standard Project Templates Documentation].

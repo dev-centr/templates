@@ -53,5 +53,5 @@ The Dev Center app uses this repository to:
 
 == Documentation
 
-For detailed guides on how to use these templates and configure your development environment, see the link:https://foodtrucknerds.github.io/docs[Standard Workspace Documentation].
+For detailed guides on how to use these templates and configure your development environment, see the link:https://the-dev-center.github.io/docs[Standard Project Templates Documentation].
 
