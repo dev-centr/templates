@@ -20,7 +20,7 @@
   "editor.tabSize": 2,
 
   // We use Prettier as our default formatter with TypeScript addon support
-  "editor.defaultFormatter": "biomejs.biome",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
   //
@@ -29,20 +29,38 @@
 	  "editor.wordWrap": "on" // Displays text wrapping by default. users can still change the wrapping on each file.
 	},
   // Preferentially Biome for JS/TS/JSX,JSON,CSS, and GraphQL
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[code-workspace]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
 
   "markdownlint.config": {
-    // We still need markdownlint because it provides error
-    // highlighting (diagnostics) in the editor,
-    // while Markdown All-in-one and Biome do not.
+    // We still need markdownlint settings because markdownlint
+    // provides error highlighting (diagnostics) in the editor,
+    // while Markdown All-in-one, Biome and Prettier do not.
     "MD033": false // Allow HTML in markdown files
   },
 

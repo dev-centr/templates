@@ -1,10 +1,20 @@
+// This template file is provided by https://github.com/the-dev-center/templates
+// Combine this template with the 'common' template to get a full development environment.
+// NOTE: These extensions all come from the community-run OpenVSX marketplace (https://open-vsx.org)
+// so they can be installed in Cursor and other third-party VS Code forks.
 {
-  // NOTE: These extensions all come from the community-run OpenVSX marketplace (https://open-vsx.org)
-  // so they can be installed in Cursor and other third-party VS Code forks.
   "recommendations": [
-    "nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
-    "marcbruederlin.next-icons", // Next.js icon-set for VSCode's file tree interface (folder, file types, etc)
-    "HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets to quickly populate new next files. Most other snippet plugins are outdated.
-    "kristiyanvelkov.nextjs-file-gelenator" // Next.js File Generator. Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
-  ]
+    // Next.js & React
+
+    // Snippets
+    // // not available on open-vsx.org:
+    //"HareeshBhittam.next-js-snippets-latest", // Next.js 15 snippets to quickly populate new next files. Most other snippet plugins are outdated.
+    //"kristiyanvelkov.nextjs-file-gelenator", // Next.js File Generator.
+    //"nrjdalal.nextjs-assistant", // https://marketplace.visualstudio.com/items?itemName=nrjdalal.nextjs-assistant
+    // Next.js 14 click to create from templates...slightly out of date but good concept, and well crafted
+
+    // Icon sets
+    // // not available on open-vsx.org
+    //"marcbruederlin.next-icons", // Next.js icon-set for VSCode's file tree interface (folder, file types, etc)
+  ],
 }

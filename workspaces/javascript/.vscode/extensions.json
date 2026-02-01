@@ -1,5 +1,13 @@
+// This template file is provided by https://github.com/the-dev-center/templates
+// Combine this template with the 'common' template to get a full development environment.
+// NOTE: These extensions all come from the community-run OpenVSX marketplace (https://open-vsx.org)
+// so they can be installed in Cursor and other third-party VS Code forks.
 {
-	// NOTE: These extensions all come from the community-run OpenVSX marketplace (https://open-vsx.org)
-	// so they can be installed in Cursor and other third-party VS Code forks.
-	"recommendations": ["biomejs.biome"]
+  "recommendations": [
+    // Formatters & Linters & Syntax highlighters
+    "biomejs.biome", // High-speed formatter for JS/JSX/TS/TSX/JSON/JSONC/CSS/GraphQL/HTML files
+
+    // Snippets
+    "xabikos.JavaScriptSnippets",
+  ],
 }

@@ -1,0 +1,19 @@
+// Copy the following into your code-workspace file. These settings
+// do not work when in the settings.json file. They must be copied to
+// the code-workspace file.
+//
+// This template file is provided by https://github.com/the-dev-center/templates
+{
+  // See `.vscode/settings.json` and `.vscode/extensions.json` for more settings.
+
+  "yaml.schemas": {
+     "https://json.schemastore.org/github-funding.json": "/.github/FUNDING.yml"
+     // Other schemas...
+  }
+
+	// Change merge editor colors to not be so jarring
+	"workbench.colorCustomizations": {
+  	"mergeEditor.conflict.unhandledFocused.border": "#00945b",
+  	"mergeEditor.conflict.unhandledUnfocused.border": "#00784a",
+	}
+}
