@@ -16,7 +16,7 @@
 
   //
 	// ~~~~~~~~~ Code formatting and linting ~~~~~~~~~~~
-  
+
   "editor.tabSize": 2,
 
   // We use Prettier as our default formatter with TypeScript addon support
@@ -26,7 +26,9 @@
   //
   // Language settings
   "[markdown]": {
-	  "editor.wordWrap": "on" // Displays text wrapping by default. users can still change the wrapping on each file.
+    "editor.wordWrap": "on", // Displays text wrapping by default. users can still change the wrapping on each file.
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.formatOnSave": true,
 	},
   // Preferentially Biome for JS/TS/JSX,JSON,CSS, and GraphQL
   "[jsonc]": {
