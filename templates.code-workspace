@@ -15,14 +15,34 @@
 		// Standard formatting settings
 		"editor.tabSize": 2,
 		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.defaultFormatter": "biomejs.biome",
 
 		// Language specific settings
 		"[asciidoc]": {
 			"editor.wordWrap": "on"
 		},
 		"[markdown]": {
-			"editor.wordWrap": "on"
+			"editor.wordWrap": "on",
+			"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+			"editor.formatOnSave": true
+		},
+		"[yaml]": {
+			"editor.defaultFormatter": "redhat.vscode-yaml"
+		},
+
+		// IMPORTANT: Language-specific overrides are required to ensure workspace settings 
+		// take precedence over any individual User-level language defaults (like Prettier).
+		"[javascript]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[javascriptreact]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "biomejs.biome"
 		},
 		"[json]": {
 			"editor.defaultFormatter": "biomejs.biome"
@@ -32,16 +52,23 @@
 		},
 		"[code-workspace]": {
 			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[css]": {
+			"editor.defaultFormatter": "biomejs.biome"
+		},
+		"[graphql]": {
+			"editor.defaultFormatter": "biomejs.biome"
 		}
 	},
 	"extensions": {
 		"recommendations": [
 			"asciidoctor.asciidoctor-vscode",
-			"esbenp.prettier-vscode",
-			"rvest.vs-code-prettier-eslint",
+			"biomejs.biome",
+			"yzhang.markdown-all-in-one",
+			"DavidAnson.vscode-markdownlint",
 			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
 			"bierner.markdown-mermaid",
-			"biomejs.biome"
+			"redhat.vscode-yaml"
 		]
 	}
 }

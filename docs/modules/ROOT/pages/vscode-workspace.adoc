@@ -72,6 +72,15 @@ The `workspaces/global.code-workspace` file provides an example workspace defini
 
 To share settings across repositories, embed them directly in your project's `.code-workspace` file or copy workspace file templates from the `workspaces/` folder.
 
+[WARNING]
+====
+**Settings Precedence & Priority:** VS Code settings follow a strict hierarchy of visibility: **User Settings > Workspace Settings (.code-workspace) > Folder Settings (.vscode/settings.json)**.
+
+However, **Language-specific settings** (e.g., `[json]`) always have higher priority than **Global settings** (e.g., `editor.defaultFormatter`), even if they are defined at a lower-priority scope. 
+
+For example, if a user has a "User" level language default set for JSON (like Prettier), it will override a "Workspace" level global default (like Biome). To ensure project standards are enforced, we use explicit language-level blocks in our workspace files to provide the necessary specificity to win against personal defaults.
+====
+
 == Creating New Templates
 
 When creating a new template folder:

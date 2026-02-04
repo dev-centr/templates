@@ -10,6 +10,13 @@ The `javascript` template layers JavaScript-specific tooling on top of the share
 
 The template does not currently ship extra extension recommendations—the shared ones live in `workspaces/common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
 
+[IMPORTANT]
+====
+**Settings Precedence:** VS Code settings follow a hierarchy: **User > Workspace > Folder**. However, **Language-specific settings** (e.g., `[json]`) always override global settings within the same or higher priority levels. 
+
+To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in our workspace files. If you find your personal settings are interfering, ensure your workspace-level language overrides are correctly defined.
+====
+
 == How to include it
 
 [source,json]
