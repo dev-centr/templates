@@ -32,18 +32,6 @@
 
 		// IMPORTANT: Language-specific overrides are required to ensure workspace settings 
 		// take precedence over any individual User-level language defaults (like Prettier).
-		"[javascript]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[typescript]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[javascriptreact]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[typescriptreact]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
 		"[json]": {
 			"editor.defaultFormatter": "biomejs.biome"
 		},
@@ -53,12 +41,6 @@
 		"[code-workspace]": {
 			"editor.defaultFormatter": "biomejs.biome"
 		},
-		"[css]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[graphql]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		}
 	},
 	"extensions": {
 		"recommendations": [
@@ -68,7 +50,7 @@
 			"DavidAnson.vscode-markdownlint",
 			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
 			"bierner.markdown-mermaid",
-			"redhat.vscode-yaml"
+			"redhat.vscode-yaml",
 		]
 	}
 }
