@@ -18,7 +18,8 @@ The `templates` repository serves as a centralized, community-driven location fo
 ----
 templates/
 ├── workspaces/             # VS Code workspace templates
-│   ├── common/             # Base extensions and universal template files
+│   ├── _common/            # Base extensions and universal template files
+│   ├── astro/              # Astro web development workflow
 │   ├── javascript/         # JS/TS development workflow
 │   ├── next.js/            # Next.js web development workflow
 │   ├── python/             # Python development workflow
@@ -38,7 +39,8 @@ This repository is designed to be pulled by tools like the Dev Center app.
 
 == Available Templates
 
-* `common/` – Base extensions for all projects (Asciidoc, Git tools, Media editors).
+* `_common/` – Base extensions for all projects (Asciidoc, Git tools, Media editors).
+* `astro/` – Specialized Astro development environment.
 * `javascript/` – Standard JS/TS linting and formatting (Prettier, ESLint).
 * `next.js/` – Optimized Next.js development experience.
 * `python/` – Modern Python tooling recommendations.
@@ -46,10 +48,12 @@ This repository is designed to be pulled by tools like the Dev Center app.
 
 == Usage with Dev Center
 
-The Dev Center app uses this repository to:
-* Discover available project templates.
-* Sync `.vscode` settings and extensions to project repositories.
-* Provide a starting point for developer onboarding.
+The Dev Center app serves as the primary gateway for these templates. It includes dedicated modules to:
+
+* **Browse & Discover**: Use the *Template Browser* to explore the collection, review files, and check for updates.
+* **Auto-Discovery**: The *Project Explorer* uses the `ProjectRecognizer` to identify tech stacks in your local projects and suggest relevant templates.
+* **Streamlined Installation**: Install templates directly into your projects with a single click.
+* **Export & Clone**: Save your project's custom configurations as new local templates or derivatives of existing ones.
 
 == Documentation
 
