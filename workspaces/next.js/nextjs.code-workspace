@@ -1,0 +1,27 @@
+{
+	// Copy the following into your code-workspace file.
+	//
+	// This template file is provided by https://github.com/the-dev-center/templates
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.next": true
+		},
+		"search.exclude": {
+			"**/.next": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"biomejs.biome",
+			"nrjdalal.nextjs-assistant",
+			"marcbruederlin.next-icons",
+			"HareeshBhittam.next-js-snippets-latest",
+			"kristiyanvelkov.nextjs-file-gelenator"
+		]
+	}
+}

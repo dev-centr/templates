@@ -1,0 +1,27 @@
+{
+	// Copy the following into your code-workspace file.
+	//
+	// This template file is provided by https://github.com/the-dev-center/templates
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[rust]": {
+			"editor.defaultFormatter": "rust-lang.rust-analyzer",
+			"editor.formatOnSave": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"rust-lang.rust-analyzer",
+			"tamasfe.even-better-toml",
+			"serayuzgur.crates",
+			"vadimcn.vscode-lldb"
+		],
+		"unwantedRecommendations": [
+			"rust-lang.rust"
+		]
+	}
+}

@@ -10,18 +10,16 @@ NOTE: Only extensions available on https://open-vsx.org[OpenVSX] are recommended
 * Deprecates `rust-lang.rust` (the legacy extension, no longer maintained).
 * You can include this folder in `.code-workspace` files to pick up shared tooling automatically.
 
-== How to include it
+== How to use it
 
-[source,json]
-----
-{
-  "folders": [
-    { "path": ".", "name": "rust-project" },
-    { "path": "../templates/workspaces/common", "name": "common" },
-    { "path": "../templates/workspaces/rust", "name": "rust (future tooling)" }
-  ]
-}
-----
+To use this template, open the `rust.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
 
-Extensions are configured in `.vscode/extensions.json` inside this folder. Any workspace that references this template will automatically pick up the extension recommendations and deprecations. Before adding new extensions, verify they are available on https://open-vsx.org[OpenVSX].
+[IMPORTANT]
+====
+For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these Rust-specific ones.
+====
+
+Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
+
+Any project that includes these workspace blocks will pick up the extension recommendations and deprecations. Before adding new extensions, verify they are available on https://open-vsx.org[OpenVSX].
 

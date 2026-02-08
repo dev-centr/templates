@@ -1,7 +1,0 @@
-// NOTE: These extensions all come from the community-run OpenVSX marketplace (https://open-vsx.org)
-// so they can be installed in Cursor and other third-party VS Code forks.
-{
-  "recommendations": [
-    "charliermarsh.ruff", // Extremely fast Python code formatter designed as a drop-in replacement for Black
-  ],
-}

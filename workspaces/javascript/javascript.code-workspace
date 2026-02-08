@@ -1,4 +1,7 @@
 {
+	// Copy the following into your code-workspace file.
+	//
+	// This template file is provided by https://github.com/the-dev-center/templates
 	"folders": [
 		{
 			"path": ".",
@@ -79,5 +82,11 @@
 		"scm.alwaysShowRepositories": true,
 		"scm.providerCountBadge": "auto",
 		"git.closeDiffOnOperation": true
+	},
+	"extensions": {
+		"recommendations": [
+			"biomejs.biome",
+			"xabikos.JavaScriptSnippets"
+		]
 	}
 }

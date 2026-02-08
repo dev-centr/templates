@@ -11,18 +11,14 @@ All recommendations come from the community-run OpenVSX marketplace, so they ins
 * `HareeshBhittam.next-js-snippets-latest` – snippets for the latest Next.js patterns (app router, server components, etc.).
 * `kristiyanvelkov.nextjs-file-gelenator` – quick scaffolding for common Next.js file layouts.
 
-== How to include it
+== How to use it
 
-[source,json]
-----
-{
-  "folders": [
-    { "path": ".", "name": "nextjs-project" },
-    { "path": "../templates/workspaces/javascript", "name": "javascript" },
-    { "path": "../templates/workspaces/next.js", "name": "next.js" }
-  ]
-}
-----
+To use this template, open the `nextjs.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
 
-Add the template folder next to your project and the `javascript` template. That keeps your core formatter/linter rules (from `javascript`) intact while layering in the Next.js-specific extensions defined here. Because the configuration lives inside the template folder, updates land automatically everywhere the template is referenced—no copying required.
+[IMPORTANT]
+====
+For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these Next.js-specific ones.
+====
+
+Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
 

@@ -1,6 +1,6 @@
 = JavaScript / TypeScript Template
 
-The `javascript` template layers JavaScript-specific tooling on top of the shared `common` configuration. Use it whenever you need consistent formatting, linting, and workspace ergonomics for Node, browser, or hybrid TypeScript projects.
+The `javascript` template layers JavaScript-specific tooling on top of the shared `_common` configuration. Use it whenever you need consistent formatting, linting, and workspace ergonomics for Node, browser, or hybrid TypeScript projects.
 
 == What it provides
 
@@ -8,7 +8,7 @@ The `javascript` template layers JavaScript-specific tooling on top of the share
 * Opinionated workspace defaults that hide noisy folders like `node_modules`, `.git`, and `.next` while keeping Git status scoped to your project.
 * A ready-to-copy VS Code workspace file (`javascript.code-workspace`) you can use as a starting point for new repositories.
 
-The template does not currently ship extra extension recommendations—the shared ones live in `workspaces/common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
+The template does not currently ship extra extension recommendations—the shared ones live in `workspaces/_common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
 
 [IMPORTANT]
 ====
@@ -17,17 +17,14 @@ The template does not currently ship extra extension recommendations—the share
 To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in our workspace files. If you find your personal settings are interfering, ensure your workspace-level language overrides are correctly defined.
 ====
 
-== How to include it
+== How to use it
 
-[source,json]
-----
-{
-  "folders": [
-    { "path": ".", "name": "my-project" },
-    { "path": "../templates/workspaces/javascript", "name": "javascript" }
-  ]
-}
-----
+To use this template, open the `javascript.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
 
-Add the template folder alongside your project folder in `.code-workspace` files (or Cursor’s workspace UI). VS Code will automatically load the formatter/linting settings and expose the template folder so that its `.vscode` configuration stays up to date without copying files around.
+[IMPORTANT]
+====
+For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these JavaScript-specific ones.
+====
+
+Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
 
