@@ -2,6 +2,11 @@
 	// Copy the following into your code-workspace file.
 	//
 	// This template file is provided by https://github.com/the-dev-center/templates
+	"folders": [
+		{
+			"path": "."
+		}
+	],
 	"settings": {
 		"files.exclude": {
 			"**/node_modules": true,
@@ -78,5 +83,20 @@
 			"mergeEditor.conflict.unhandledFocused.border": "#00945b",
 			"mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
 		}
+	},
+	"extensions": {
+		"recommendations": [
+			"biomejs.biome",
+			"DavidAnson.vscode-markdownlint",
+			"yzhang.markdown-all-in-one",
+			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+			"bierner.markdown-mermaid",
+			"asciidoctor.asciidoctor-vscode",
+			"redhat.vscode-yaml",
+			"henoc.svgeditor",
+			"github.vscode-pull-request-github",
+			"mhutchie.git-graph",
+			"eamodio.gitlens"
+		]
 	}
 }
