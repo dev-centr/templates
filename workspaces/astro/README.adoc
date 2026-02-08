@@ -1,0 +1,28 @@
+= Astro Template
+
+The `astro` template provides a specialized environment for building modern, content-driven websites with the Astro framework. It includes optimized settings for `.astro` files, MDX support, and component-based development.
+
+== Included extensions
+
+All recommendations come from the community-run OpenVSX marketplace, ensuring compatibility with Cursor and other VS Code forks:
+
+* `astro-build.astro-vscode` – Official Astro support, including syntax highlighting, IntelliSense, and diagnostics.
+* `biomejs.biome` – Fast, unified tool for formatting and linting JavaScript, TypeScript, and CSS.
+* `unifiedjs.vscode-mdx` – Language support for MDX, commonly used in Astro for content-rich pages.
+
+== How to use it
+
+To use this template, open the `astro.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
+
+[IMPORTANT]
+====
+For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these Astro-specific ones.
+====
+
+Including these settings adds Astro-specific diagnostics and snippets while maintaining the shared standards from the `_common` template.
+
+== Features
+
+* **Tailored Formatting**: Pre-configured settings for `.astro` files to ensure consistent code style.
+* **Content Focus**: First-class support for MDX and Markdown, essential for Astro's "Content Collections".
+* **Performance**: Workspace excludes for `dist/` and `node_modules/` to keep search and the explorer snappy.
