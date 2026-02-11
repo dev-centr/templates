@@ -1,0 +1,21 @@
+{
+    // Copy the following into your code-workspace file.
+    //
+    // This template file is provided by https://github.com/the-dev-center/templates
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "webfreak.code-d"
+        ]
+    },
+    "settings": {
+        "[d]": {
+            "editor.defaultFormatter": "webfreak.code-d",
+            "editor.formatOnSave": true
+        }
+    },
+}

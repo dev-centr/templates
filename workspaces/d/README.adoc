@@ -1,0 +1,21 @@
+= D Template
+
+The `d` template provides shared D language developer tooling configuration. Including this folder in workspaces ensures consistent extension recommendations across all D projects.
+
+NOTE: Only extensions available on https://open-vsx.org[OpenVSX] are recommended. Extensions not published to OpenVSX must not be added to this template.
+
+== Current status
+
+* Recommends `webfreak.code-d` (the actively maintained D extension, available on OpenVSX).
+* You can include this folder in `.code-workspace` files to pick up shared tooling automatically.
+
+== How to use it
+
+To use this template, open the `d.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
+
+[IMPORTANT]
+====
+For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these D-specific ones.
+====
+
+Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center.
