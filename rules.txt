@@ -1,0 +1,37 @@
+# Rules
+<!---
+# ==============================================================================
+# DEV CENTER GLOBAL RULES MANIFEST
+# ==============================================================================
+# This file contains the foundational rules for the development environment.
+#
+# USAGE INSTRUCTIONS:
+# 1. AI AGENTS: Read this file at the start of every session to align with the
+#    workflow, tooling, and directory structure of this machine.
+# 2. TEMPLATING: This file is the source of truth for repository bootstrapping.
+#    Use this content to initialize project-specific rule files.
+# 3. CONTEXT: These rules apply specifically to Windows 11 / PowerShell 7
+#    environments within the target code hierarchy.
+# ==============================================================================
+--->
+
+- Use pnpm, pnpx.
+- You're on windows 11 and powershell 7.
+- Use gh and glab to interact with repos.
+- When creating issue reports, use store in Z:\code\github.com\AMDphreak\.issues.
+- Use antora guidelines in the dev-center's docs: Z:\code\github.com\the-dev-center\dev-center\docs\modules\publishing\pages\antora-deployment.adoc.
+- Use asciidoc for readme unless md is explicitly requested.
+- Clone git repos using instructions in Z:\code\FOLDER_SCHEMA.md with root Z:\code.
+- Always put python projects in a venv. use uv instead of pip. scripts should install uv if not present.
+- Whenever you install a new tool in powershell and it adds itself to the PATH, refresh the environment with `$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" +
+[System.Environment]::GetEnvironmentVariable("Path","User")`
+- When building a project fails, check for outdated code instead of downgrading dependencies. If a build fails because of a missing icon, stop building. Instead, import icons from a free icon library online to build the app, or ask the user to add the missing icon.
+- My machine saves screenshots in C:\Users\rjamd\Pictures\Screenshots
+- When creating documentation, populate content to satisfy the Diátaxis model.
+- Formally endorse and use JSON5 for all software projects' configuration and data files. Prefer `.json5` over `.json` to support comments, trailing commas, and other human-friendly features.
+
+AI tends to generate incorrect Asciidoc syntax. Fix these common pitfalls:
+
+- Checklist: fails to include asterisk. `* [ ]`
+- Bold text as pseudoheading: fails to insert blank line between **text** and next block.
+- Lists: fails to add list continuations (`+`) before list items' continued blocks.
