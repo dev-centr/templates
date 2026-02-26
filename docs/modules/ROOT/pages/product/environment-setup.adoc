@@ -1,0 +1,25 @@
+= Environment Setup Features
+:navtitle: Environment Setup
+
+The Environment Setup module is designed to align the host system with high-performance development standards.
+
+== FileSystem Optimization
+
+Effective filesystem choice is critical for build performance and disk longevity.
+
+### Supported High-Performance Filesystems
+* **Windows**: **ReFS (Dev Drive)** - Optimized for developer workloads, reducing file system overhead during high-IO operations (like `node_modules` instantiation).
+* **Linux+GNU+GNU**: **XFS or Btrfs** - Offers advanced features like CoW (Copy-on-Write) and high performance for large source trees.
+* **macOS**: **APFS** - The standard high-performance choice for Apple systems.
+
+### Migration Planning
+The `DiskManager` provides an automated "Move-off, Format, Move-back" strategy when a non-optimal filesystem (like NTFS for developer data drives) is detected.
+
+== Issues Repository Pattern
+
+Dev Center automates the initialization of a dedicated `.issues` repository at the root of your code collection.
+
+### Core Benefits
+* **Local-First**: Searchable markdown files that don't depend on a web connection.
+* **AI Context**: Provides a persistent memory of project history that can be fed into AI rulesets.
+* **Standardized Reporting**: Pulls custom templates for bug reports and feature requests.

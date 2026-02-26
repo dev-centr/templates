@@ -1,4 +1,10 @@
-* xref:index.adoc[Workspace Templates]
+* xref:architecture/overview.adoc[Architecture Overview]
+* Architecture
+** xref:architecture/overview.adoc[Core Pattern]
+* Features
+** xref:product/environment-setup.adoc[Environment Setup]
+** xref:product/documentation-preview.adoc[Doc Preview System]
+** xref:product/vcs-configuration.adoc[VCS & Repos]
 * xref:getting-started.adoc[Getting Started]
 * xref:committing.adoc[Committing Code]
 * xref:vscode-workspace.adoc[VSCode Workspace]
@@ -6,6 +12,8 @@
 * xref:guides/corepack-installation-helper.adoc[Corepack installation helper]
 * xref:guides/tool-hierarchy.adoc[Tool hierarchy]
 * xref:guides/why-use-corepack.adoc[Why use Corepack]
+* xref:guides/issues-repository.adoc[Issues Repository Pattern]
+* xref:terminology.adoc[Terminology]
 * xref:dev/components.adoc[Dev: Components]
 * xref:dev/getting-started.adoc[Dev: Getting Started]
 * xref:dev/development-tools.adoc[Dev: Development Tools]

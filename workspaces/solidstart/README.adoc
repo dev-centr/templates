@@ -1,0 +1,27 @@
+= SolidStart Template
+
+The `solidstart` template provides a specialized environment for building modern, full-stack applications with the SolidStart framework. It includes optimized settings for SolidJS components, Nitro server integration, and reactive development.
+
+== Included extensions
+
+All recommendations come from the community-run OpenVSX marketplace, ensuring compatibility with Cursor and other VS Code forks:
+
+* `solid.solid-js` – Official SolidJS support, including syntax highlighting, IntelliSense, and snippets for reactive primitives.
+* `biomejs.biome` – Fast, unified tool for formatting and linting JavaScript, TypeScript, and CSS.
+
+== How to use it
+
+To use this template, open the `solidstart.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
+
+[IMPORTANT]
+====
+For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these SolidStart-specific ones.
+====
+
+Including these settings adds Solid-specific snippets and optimizations while maintaining the shared standards from the `_common` template.
+
+== Features
+
+* **Tailored Formatting**: Pre-configured settings to work seamlessly with SolidJS's JSX-based reactivity.
+* **Optimized Search**: Workspace excludes for `.solid/`, `.output/`, and `.nitro/` to keep search and the explorer focused on your source code.
+* **Full-stack Ready**: Prepared for SolidStart's Nitro-based server-side capabilities.

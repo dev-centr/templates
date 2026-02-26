@@ -1,0 +1,32 @@
+= Issues Repository Pattern
+:navtitle: Issues Repository
+
+A key component of an efficient, AI-assisted development workflow is the maintenance of a dedicated, local-first issues repository.
+
+== Overview
+
+Instead of relying solely on transient issue trackers or burying tasks in a project-specific TODO list, you should maintain a central `.issues` repository at the root of your code collection (e.g., `Z:\code\your-name\.issues`).
+
+== Why use a dedicated repo?
+
+1. **Persistence**: Issues are stored as plain markdown files, making them searchable, version-controllable, and portable.
+2. **AI Context**: By pointing your AI assistant (e.g., via global rules) to this repository, it can maintain a historical record of bugs, feature requests, and architectural decisions across all your projects.
+3. **Structured Reporting**: Standardized templates for bugs and features ensure that all necessary information is captured consistently.
+
+== Setting Up Your Issues Repo
+
+1. **Create the Repository**: Initialize a new repository at your code root named `.issues`.
+2. **Structure**: 
+   - `issues/`: Folder containing subdirectories for each individual issue.
+   - `issue.md`: The core report within each issue folder.
+3. **Directives**: Add a rule to your global AI settings (e.g., `.gemini/rules` or similar) instructing the assistant to use this path for all issue reporting.
+
+[source,markdown]
+----
+# AI Rule Example
+When creating issue reports, always store them in Z:\code\user\.issues\issues\name-of-issue\issue.md
+----
+
+== Integration with Dev Center
+
+The Dev Center app's **Environment Setup** module can automate this process for you, offering to pull the standard structure and integrate it into your local code root.

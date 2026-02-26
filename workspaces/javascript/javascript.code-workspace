@@ -1,7 +1,8 @@
 {
 	// Copy the following into your code-workspace file.
 	//
-	// This template file is provided by https://github.com/the-dev-center/templates
+	// This template file is provided by https://github.com/devcntr-app/templates
+	// Base settings (Biome, Markdownlint, Git) must be copied from the common template.
 	"folders": [
 		{
 			"path": ".",
@@ -10,83 +11,12 @@
 	],
 
 	"settings": {
-		// Tell the YAML parser to not lint the GitHub FUNDING.yml file.
-		"yaml.schemas": {
-			"https://json.schemastore.org/github-funding.json": "/.github/FUNDING.yml"
-		},
-
-		// Change merge editor colors to not be so jarring
-		"workbench.colorCustomizations": {
-			"mergeEditor.conflict.unhandledFocused.border": "#00945b",
-			"mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
-		},
-
-		"files.exclude": {
-			"**/node_modules": true,
-			"**/.git": true,
-			"**/.next": true
-		},
-
-		// hidden from search to improve performance in VScode
-		"search.exclude": {
-			"**/node_modules": true,
-			"**/.git": true,
-			"**/.next": true
-		},
-
-		"editor.tabSize": 2,
-
-		// We use Biome as our default formatter with TypeScript addon support
-		"editor.defaultFormatter": "biomejs.biome",
-		"editor.formatOnSave": true,
-
-		// Language settings
-		"[markdown]": {
-			"editor.wordWrap": "on" // Displays text wrapping by default. users can still change the wrapping on each file.
-		},
-
-		// IMPORTANT: Language-specific overrides are required to ensure workspace settings 
-		// take precedence over any individual User-level language defaults (like Prettier).
-		"[javascript]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[typescript]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[javascriptreact]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[typescriptreact]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[json]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[jsonc]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[code-workspace]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[css]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-		"[graphql]": {
-			"editor.defaultFormatter": "biomejs.biome"
-		},
-
-		"markdownlint.config": {
-			"MD033": false // Allow HTML in markdown files
-		},
-
-		"scm.alwaysShowRepositories": true,
-		"scm.providerCountBadge": "auto",
-		"git.closeDiffOnOperation": true
+		// Add JS/TS specific settings here if any.
 	},
 	"extensions": {
 		"recommendations": [
-			"biomejs.biome",
 			"xabikos.JavaScriptSnippets"
 		]
 	}
 }
+

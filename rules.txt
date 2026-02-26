@@ -1,7 +1,7 @@
 # Rules
 <!---
 # ==============================================================================
-# DEV CENTER GLOBAL RULES MANIFEST
+# DEVCNTR GLOBAL RULES MANIFEST
 # ==============================================================================
 # This file contains the foundational rules for the development environment.
 #
@@ -19,7 +19,7 @@
 - You're on windows 11 and powershell 7.
 - Use gh and glab to interact with repos.
 - When creating issue reports, use store in Z:\code\github.com\AMDphreak\.issues.
-- Use antora guidelines in the dev-center's docs: Z:\code\github.com\the-dev-center\dev-center\docs\modules\publishing\pages\antora-deployment.adoc.
+- Use antora guidelines in the devcntr's docs: Z:\code\github.com\devcntr-org\devcntr\docs\modules\publishing\pages\antora-deployment.adoc.
 - Use asciidoc for readme unless md is explicitly requested.
 - Clone git repos using instructions in Z:\code\FOLDER_SCHEMA.md with root Z:\code.
 - Always put python projects in a venv. use uv instead of pip. scripts should install uv if not present.
@@ -35,3 +35,4 @@ AI tends to generate incorrect Asciidoc syntax. Fix these common pitfalls:
 - Checklist: fails to include asterisk. `* [ ]`
 - Bold text as pseudoheading: fails to insert blank line between **text** and next block.
 - Lists: fails to add list continuations (`+`) before list items' continued blocks.
+

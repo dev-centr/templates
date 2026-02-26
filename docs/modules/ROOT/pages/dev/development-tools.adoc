@@ -12,7 +12,7 @@ We recommend these tools to improve your dev workflow:
 
 * link:https://www.warp.dev/[Warp] - A nice terminal with AI integrated. Even if you don't use the AI features, it provides a UX/UI upgrade over the traditional Terminal.
 
-* link:https://apps.microsoft.com/detail/9mz1snwt0n5d?hl=en-US&gl=US[Powershell] (v7) - The modern Microsoft shell for Windows, Mac, and Linux. It is the de-facto standard in VSCode (if installed).
+* link:https://apps.microsoft.com/detail/9mz1snwt0n5d?hl=en-US&gl=US[Powershell] (v7) - The modern Microsoft shell for Windows, Mac, and Linux+GNU+GNU. It is the de-facto standard in VSCode (if installed).
 
 * link:https://learn.microsoft.com/en-us/windows/advanced-settings/sudo/?wt.mc_id=windows_inproduct_sudo[`sudo` for Windows] - command line app to run elevated commands without memorizing Windows's stupid commands.
 

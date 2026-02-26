@@ -38,6 +38,7 @@ Each template folder also contains active configuration files that can be copied
 * `next.js/` - Next.js specific extensions (Next.js assistant, icons, snippets)
 * `python/` - Python workflow extensions (Ruff formatter)
 * `rust/` - Rust workflow extensions
+* `solidstart/` - SolidStart workflow extensions
 
 == Using Templates in Workspaces
 

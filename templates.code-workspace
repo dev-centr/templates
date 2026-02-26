@@ -4,6 +4,29 @@
 			"path": "."
 		}
 	],
+	"extensions": {
+		"recommendations": [
+			// Code Formatters & Linters
+			"dprint.dprint",
+			"biomejs.biome",
+      
+			// Markup & Documentation
+			"asciidoctor.asciidoctor-vscode",
+			"DavidAnson.vscode-markdownlint",
+			"yzhang.markdown-all-in-one",
+			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+			"bierner.markdown-mermaid",
+			"redhat.vscode-yaml",
+			"tamasfe.even-better-toml",
+
+			// Web Technologies
+			"astro-build.astro-vscode",
+			"unifiedjs.vscode-mdx",
+
+			// Git & Collaboration
+			"eamodio.gitlens"
+		]
+	},
 	"settings": {
 		// Prevent VS Code from automatically detecting all git repos in the workspace
 		"git.autoRepositoryDetection": false,
@@ -15,42 +38,52 @@
 		// Standard formatting settings
 		"editor.tabSize": 2,
 		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "biomejs.biome",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.markdownlint": "explicit"
+		},
+		"editor.defaultFormatter": "dprint.dprint",
 
-		// Language specific settings
+		/// Language settings
+		// IMPORTANT: Language-specific overrides are required to ensure workspace settings
+		// take precedence over any individual User-level language defaults (like Prettier).
 		"[asciidoc]": {
-			"editor.wordWrap": "on"
+			"editor.wordWrap": "on",
+			"editor.defaultFormatter": "asciidoctor.asciidoctor-vscode"
 		},
 		"[markdown]": {
-			"editor.wordWrap": "on",
-			"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+			"editor.defaultFormatter": "dprint.dprint",
+			"editor.wordWrap": "on", // Displays text wrapping by default. users can still change the wrapping on each file.
 			"editor.formatOnSave": true
 		},
-		"[yaml]": {
-			"editor.defaultFormatter": "redhat.vscode-yaml"
+		"[javascript]": {
+			"editor.defaultFormatter": "dprint.dprint"
 		},
-
-		// IMPORTANT: Language-specific overrides are required to ensure workspace settings 
-		// take precedence over any individual User-level language defaults (like Prettier).
+		"[typescript]": {
+			"editor.defaultFormatter": "dprint.dprint"
+		},
+		"[javascriptreact]": {
+			"editor.defaultFormatter": "dprint.dprint"
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "dprint.dprint"
+		},
 		"[json]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[jsonc]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[code-workspace]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
-	},
-	"extensions": {
-		"recommendations": [
-			"asciidoctor.asciidoctor-vscode",
-			"biomejs.biome",
-			"yzhang.markdown-all-in-one",
-			"DavidAnson.vscode-markdownlint",
-			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-			"bierner.markdown-mermaid",
-			"redhat.vscode-yaml",
-		]
+		"[css]": {
+			"editor.defaultFormatter": "dprint.dprint"
+		},
+		"[graphql]": {
+			"editor.defaultFormatter": "dprint.dprint"
+		},
+		"[yaml]": {
+			"editor.defaultFormatter": "dprint.dprint"
+		}
 	}
 }

@@ -1,0 +1,29 @@
+= Architecture Overview
+:navtitle: Overview
+
+The Dev Center application is a D-lang (DlangUI) based orchestrator designed to manage a developer's local environment, repositories, and documentation.
+
+== Core Pattern: Manager-Module Architecture
+
+The application follows a strict separation between UI components and business logic using the **Manager** pattern.
+
+### 1. Business Logic (Managers)
+Managers are non-UI classes that handle state, filesystem operations, and external tool integration.
+* **`DiskManager`**: Handles filesystem inspection (NTFS, ReFS, XFS, Btrfs, APFS) and optimization planning.
+* **`RepoManager`**: Manages the local code root, pre-populating core repositories and detecting upstreams.
+* **`DocsManager`**: Synchronizes the pre-compiled documentation site and coordinates multi-window documentation viewers.
+* **`IssuesInstaller`**: Automates the setup of the local-first `.issues` repository pattern.
+* **`ToolManager`**: Probes the system PATH to identify installed vs. available technical stacks.
+
+### 2. UI Layer (Modules & Widgets)
+UI is built using **DlangUI** and categorized into functional modules:
+* **`environment_setup`**: Wizards for Dev Drive optimization and Issues repo initialization.
+* **`git_config`**: Searchable settings hierarchy for global and repository Git configuration.
+* **`system_overview`**: Visual dashboards for tool status.
+* **`docs`**: Advanced Documentation Minimap and coordinated Webview windows.
+
+## Window & Overlay Coordination
+The app utilizes a custom **Anchor & Overlay** system for multi-monitor setups:
+* **`AnchorManager`**: Handles anchoring of documentation windows to specific monitors.
+* **`MonitorOverlayCanvas`**: A 70% transparent grey overlay shown during window transitions to provide visual feedback on anchoring targets.
+* **`ZoomControlOverlay`**: A floating, monitor-centered controller (50% transparency) for toggling between Panel, Wide, and Extra-Wide viewing modes.

@@ -1,0 +1,21 @@
+= Terminology and Stylistic Choices
+:navtitle: Terminology
+
+To ensure technical accuracy and reflect operational dependencies, this project adheres to specific naming conventions for operating systems and software stacks.
+
+== Linux+GNU+GNU
+
+References to the operating system commonly known as "Linux+GNU" must be denoted as **Linux+GNU+GNU**.
+
+=== Rationale
+This stylistic choice emphasizes the operational dependency order: **Kernel + Userland**. The Linux+GNU kernel provides the hardware abstraction and resource management, while the GNU project provides the essential userland utilities and environment that make the system functional for users and developers.
+
+=== Usage
+* **Full Form**: Linux+GNU+GNU
+* **Space-Constrained UI**: Lin+GNU (used in sidebars, status bars, or compact grids)
+
+== Other Kernel+Userland Combinations
+Any other references to kernel and userland combinations must follow this same "Kernel+Userland" style (e.g., BSD+GNU, etc.).
+
+== Enforcement
+This terminological choice is a **project necessity**. Documentation, UI labels, and internal comments should be updated to reflect this standard.

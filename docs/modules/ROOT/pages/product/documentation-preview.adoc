@@ -1,0 +1,28 @@
+= Documentation Preview System
+:navtitle: Documentation Preview
+
+The Dev Center includes a performant, monitor-aware documentation viewing system that eliminates the context switch to a full web browser.
+
+== DocMinimap (Zoomed-Out Preview)
+
+The **DocMinimap** provides a real-time, one-way synchronized preview of project documentation.
+
+* **Contextual Sync**: As you interact with different modules (e.g., Environment Setup), the minimap automatically scrolls to the relevant technical documentation section.
+* **Non-Persistent Sync**: After the initial scroll transition, the user retains full manual control over the preview position.
+* **Direct Access**: Clicking anywhere in the minimap opens the full-zoom documentation window.
+
+== Advanced Window Management
+
+### Full-Zoom Webviews
+The app spawns dedicated documentation windows (using webview integration) for each module.
+* **Return Flow**: Title bars include a return button to quickly focus back on the main app.
+* **External Link**: Subtle icons allow you to jump to a full web browser for the current page if needed.
+
+### Dynamic Zoom Controls
+A floating overlay appears at the top center of your monitor to manage window sizes:
+1. **Panel Mode**: Repositions to the side of the main app (640px base).
+2. **Wide Mode**: 2x base width.
+3. **Extra-Wide Mode**: 3x base width.
+
+### Monitor Anchoring
+Users can drag and drop documentation windows between monitors using a "Monitor Overlay Canvas" system, allowing for flexible multitasking without losing document context.

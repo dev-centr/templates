@@ -1,0 +1,31 @@
+= VCS & Repository Management
+:navtitle: VCS Configuration
+
+The Dev Center simplifies complex Version Control workflows and ensures consistent repository organization across your machine.
+
+== Repository Pre-population
+
+On initialization, Dev Center ensures your local code root follows a structured hierarchy:
+* **`devcntr-app/`**: Core repositories for development and contribution.
+* **`upstream/`**: Repositories managed as external dependencies.
+* **`user/`**: Your personal projects and forks.
+
+== Advanced VCS Configuration
+
+### Multi-System Support
+The `VcsConfigModule` provides a unified interface for managing configuration across multiple systems:
+* **Git**: Full support for `.gitconfig` hierarchy, identities, and remotes.
+* **Subversion (SVN)**: Manage `.subversion/config` and `servers` settings, including authentication and proxy rules.
+* **Mercurial (Hg)**: Configure `.hgrc` identities, extensions (like `mq` or `graphlog`), and web settings.
+
+### Settings Hierarchy
+The module uses a model-driven approach to manage global and project-specific settings. 
+* **Searchable Tree**: Quickly filter through categories like `Authentication`, `Extensions`, and `Repository`.
+* **Instant Apply**: Changes are mapped directly to the appropriate config files for each system.
+
+### Remote Detection & Fixes
+Using integrated `gh` and `glab` support for Git (and path probing for SVN/Hg), the **Remotes Sub-module** can:
+1. Detect upstream parent URLs for local forks.
+2. Identify missing or misconfigured remotes/servers.
+3. Suggest and automate the addition of upstream links based on repository metadata.
+

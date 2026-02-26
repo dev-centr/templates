@@ -5,8 +5,9 @@ The `_common` workspace template provides baseline tooling that every repository
 == When to include it
 
 * You are working in a multi-repo workspace and want consistent Git tooling (GitHub Pull Requests, GitLens, Git Graph).
-* You need the shared documentation stack (Prettier, Prettier ESLint, Mermaid, AsciiDoc, SVG editor).
+* You need the shared documentation stack (dprint, Biome, Mermaid, AsciiDoc, SVG editor).
 * You want YAML schema hints for `.github/FUNDING.yml` and other shared automation files.
+* You use Antora for documentation and want standard `antora-playbook.yml` / `antora-playbook.testing.yml` ignore rules.
 
 == Included configuration
 
@@ -15,7 +16,7 @@ The `_common` workspace template provides baseline tooling that every repository
 
 [IMPORTANT]
 ====
-**Settings Precedence:** VS Code settings follow a hierarchy: **User > Workspace > Folder**. However, **Language-specific settings** (e.g., `[json]`) always override global settings within the same or higher priority levels. 
+**Settings Precedence:** VS Code settings follow a hierarchy: **User > Workspace > Folder**. However, **Language-specific settings** (e.g., `[json]`) always override global settings within the same or higher priority levels.
 
 To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in our workspace files. If you find your personal settings are interfering, ensure your workspace-level language overrides are correctly defined.
 ====
@@ -32,4 +33,3 @@ You should also copy the corresponding blocks from your chosen tech stack templa
 Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
 
 If you need to copy a specific configuration file (for example `.github/FUNDING.yml`), open the template folder directly and copy the file into your repo.
-

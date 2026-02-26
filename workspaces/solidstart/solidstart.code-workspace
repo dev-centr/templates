@@ -1,0 +1,30 @@
+{
+    // Copy the following into your code-workspace file.
+    //
+    // This template file is provided by https://github.com/devcntr-app/templates
+    // Base settings (Biome, Markdownlint, Git) must be copied from the common template.
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.output": true,
+            "**/.nitro": true,
+            "**/.cache": true,
+            "**/.solid": true
+        },
+        "search.exclude": {
+            "**/.output": true,
+            "**/.nitro": true,
+            "**/.cache": true,
+            "**/.solid": true
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "solid.solid-js"
+        ]
+    }
+}

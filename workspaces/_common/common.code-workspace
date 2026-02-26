@@ -1,76 +1,103 @@
 {
 	// Copy the following into your code-workspace file.
 	//
-	// This template file is provided by https://github.com/the-dev-center/templates
+	// This template file is provided by https://github.com/devcntr-app/templates
 	"folders": [
 		{
 			"path": "."
 		}
 	],
+	"extensions": {
+		"recommendations": [
+			// Code Formatters & Linters
+			"dprint.dprint",
+			"biomejs.biome",
+      
+			// Markup & Documentation
+			"asciidoctor.asciidoctor-vscode",
+			"DavidAnson.vscode-markdownlint",
+			"yzhang.markdown-all-in-one",
+			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+			"bierner.markdown-mermaid",
+			"redhat.vscode-yaml",
+			"tamasfe.even-better-toml",
+
+			// Web Technologies
+			"astro-build.astro-vscode",
+			"unifiedjs.vscode-mdx",
+
+			// Git & Collaboration
+			"eamodio.gitlens"
+		]
+	},
 	"settings": {
+	  // hidden from view in VScode
 		"files.exclude": {
 			"**/node_modules": true,
 			"**/.git": true,
-			"**/.next": true
 		},
 
 		// hidden from search to improve performance in VScode
 		"search.exclude": {
 			"**/node_modules": true,
 			"**/.git": true,
-			"**/.next": true
 		},
 
 		"editor.tabSize": 2,
-		// We use Biome as our default formatter
-		"editor.defaultFormatter": "biomejs.biome",
 		"editor.formatOnSave": true,
+		// We use dprint as our default formatter
+		"editor.defaultFormatter": "dprint.dprint",
+		// Only enable the following if markdownlint highlights code style errors after dprint format
+		// "editor.codeActionsOnSave": {
+		// 	"source.fixAll.markdownlint": "explicit"
+		// },
 
-		// Language settings
-		"[markdown]": {
-			"editor.wordWrap": "on", // Displays text wrapping by default. users can still change the wrapping on each file.
-			"editor.defaultFormatter": "yzhang.markdown-all-in-one",
-			"editor.formatOnSave": true
-		},
-
-		// IMPORTANT: Language-specific overrides are required to ensure workspace settings 
+		/// Language settings
+		// IMPORTANT: Language-specific overrides are required to ensure workspace settings
 		// take precedence over any individual User-level language defaults (like Prettier).
+		"[asciidoc]": {
+			"editor.wordWrap": "on",
+			"editor.defaultFormatter": "asciidoctor.asciidoctor-vscode"
+		},
+		"[markdown]": {
+			"editor.defaultFormatter": "dprint.dprint",
+			"editor.wordWrap": "on", // Displays text wrapping by default. users can still change the wrapping on each file.
+		},
 		"[javascript]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[typescript]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[javascriptreact]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[typescriptreact]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[json]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[jsonc]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[code-workspace]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[css]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[graphql]": {
-			"editor.defaultFormatter": "biomejs.biome"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 		"[yaml]": {
-			"editor.defaultFormatter": "redhat.vscode-yaml"
+			"editor.defaultFormatter": "dprint.dprint"
 		},
 
 		"markdownlint.config": {
 			"MD033": false // Allow HTML in markdown files
 		},
 
-		"scm.alwaysShowRepositories": true,
 		"scm.providerCountBadge": "auto",
 		"git.closeDiffOnOperation": true,
 
@@ -83,20 +110,6 @@
 			"mergeEditor.conflict.unhandledFocused.border": "#00945b",
 			"mergeEditor.conflict.unhandledUnfocused.border": "#00784a"
 		}
-	},
-	"extensions": {
-		"recommendations": [
-			"biomejs.biome",
-			"DavidAnson.vscode-markdownlint",
-			"yzhang.markdown-all-in-one",
-			"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-			"bierner.markdown-mermaid",
-			"asciidoctor.asciidoctor-vscode",
-			"redhat.vscode-yaml",
-			"henoc.svgeditor",
-			"github.vscode-pull-request-github",
-			"mhutchie.git-graph",
-			"eamodio.gitlens"
-		]
 	}
 }
+

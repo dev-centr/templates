@@ -24,14 +24,16 @@ templates/
 │   ├── next.js/            # Next.js web development workflow
 │   ├── python/             # Python development workflow
 │   ├── rust/               # Rust development workflow
+│   ├── solidstart/         # SolidStart web development workflow
 │   └── global.code-workspace # Example global workspace definition
 ├── docs/                   # Documentation for the templates (Antora format)
+├── rules.txt               # Hard-linked central rules template (Z:\code\rules.txt)
 └── README.adoc             # This file
 ----
 
 == How It Works
 
-This repository is designed to be pulled by tools like the Dev Center app. 
+This repository is designed to be pulled by tools like the Dev Center app.
 
 1. **Manifest**: The repository structure acts as a manifest of available templates.
 2. **Local Manipulation**: Users can clone this repository to create a local template store.
@@ -45,6 +47,7 @@ This repository is designed to be pulled by tools like the Dev Center app.
 * `next.js/` – Optimized Next.js development experience.
 * `python/` – Modern Python tooling recommendations.
 * `rust/` – Performance-focused Rust development setup.
+* `solidstart/` – Optimized SolidStart development experience.
 
 == Usage with Dev Center
 
@@ -55,7 +58,20 @@ The Dev Center app serves as the primary gateway for these templates. It include
 * **Streamlined Installation**: Install templates directly into your projects with a single click.
 * **Export & Clone**: Save your project's custom configurations as new local templates or derivatives of existing ones.
 
+== Configuration Payloads
+
+Common configuration files are provided in the root and `_common/` directories. These should be linked or copied to new repositories to ensure consistent behavior across the Dev Center ecosystem.
+
+=== Central Rules (`rules.txt`)
+
+The `rules.txt` file at the root of this repository serves as the central manifest for development environment rules.
+
+==== How to Use
+1. **Bootstrap New Projects**: When creating a new repository, copy or link this file into the project root (or `.cursorrules` / `.agent/rules`) to provide the AI with the base context of your environment.
+2. **AI Context**: Agents should be instructed to read the contents of this file before performing operations. It encodes standard expectations for the OS, Shell, and mandatory tooling.
+3. **Synchronization (Recommended)**: For local development, it is recommended to **hard-link** this file from the repository root to your own central rules location. This ensures that any adjustments to your global standards are immediately reflected across all projects.
+
 == Documentation
 
-For detailed guides on how to use these templates and configure your development environment, see the link:https://the-dev-center.github.io/docs[Standard Project Templates Documentation].
+For detailed guides on how to use these templates and configure your development environment, see the link:https://devcntr-app.github.io/docs[Standard Project Templates Documentation].
 

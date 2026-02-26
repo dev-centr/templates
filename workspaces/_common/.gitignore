@@ -45,3 +45,7 @@ logs/
 .coverage/
 coverage/
 .nyc_output/
+
+# Antora offline configuration
+antora-playbook-offline*.yml
+!antora-playbook-offline*.example.yml
