@@ -29,6 +29,8 @@
 - My machine saves screenshots in C:\Users\rjamd\Pictures\Screenshots
 - When creating documentation, populate content to satisfy the Diátaxis model.
 - Formally endorse and use JSON5 for all software projects' configuration and data files. Prefer `.json5` over `.json` to support comments, trailing commas, and other human-friendly features.
+- Don't rename README.md files that are made for package hosts like npmjs.
+
 
 AI tends to generate incorrect Asciidoc syntax. Fix these common pitfalls:
 

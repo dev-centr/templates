@@ -73,5 +73,5 @@ The `rules.txt` file at the root of this repository serves as the central manife
 
 == Documentation
 
-For detailed guides on how to use these templates and configure your development environment, see the link:https://devcntr-app.github.io/docs[Standard Project Templates Documentation].
+For detailed guides on how to use these templates and configure your development environment, see the link:https://docs.devcntr.org[Standard Project Templates Documentation].
 
