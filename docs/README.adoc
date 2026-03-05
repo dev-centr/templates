@@ -31,5 +31,5 @@ When adding new templates or workflows, ensure that corresponding documentation 
 
 == Resources
 
-For the live documentation site, visit link:https://devcntr-app.github.io/docs[Standard Project Templates Documentation].
+For the live documentation site, visit link:https://devcentr.github.io/docs[Standard Project Templates Documentation].
 

@@ -1,7 +1,7 @@
 {
 	// Copy the following into your code-workspace file.
 	//
-	// This template file is provided by https://github.com/devcntr-app/templates
+	// This template file is provided by https://github.com/dev-centr/templates
 	// Base settings (Biome, Markdownlint, Git) must be copied from the common template.
 	"folders": [
 		{

@@ -1,7 +1,7 @@
 # Rules
 <!---
 # ==============================================================================
-# DEVCNTR GLOBAL RULES MANIFEST
+# Dev-Centr GLOBAL RULES MANIFEST
 # ==============================================================================
 # This file contains the foundational rules for the development environment.
 #
@@ -19,7 +19,7 @@
 - You're on windows 11 and powershell 7.
 - Use gh and glab to interact with repos.
 - When creating issue reports, use store in Z:\code\github.com\AMDphreak\.issues.
-- Use antora guidelines in the devcntr's docs: Z:\code\github.com\devcntr-org\devcntr\docs\modules\publishing\pages\antora-deployment.adoc.
+- Use antora guidelines in the Dev-Centr's docs: Z:\code\github.com\dev-centr\devcentr\docs\modules\publishing\pages\antora-deployment.adoc.
 - Use asciidoc for readme unless md is explicitly requested.
 - Clone git repos using instructions in Z:\code\FOLDER_SCHEMA.md with root Z:\code.
 - Always put python projects in a venv. use uv instead of pip. scripts should install uv if not present.

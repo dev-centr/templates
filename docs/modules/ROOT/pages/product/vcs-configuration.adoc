@@ -6,7 +6,7 @@ The Dev Center simplifies complex Version Control workflows and ensures consiste
 == Repository Pre-population
 
 On initialization, Dev Center ensures your local code root follows a structured hierarchy:
-* **`devcntr-app/`**: Core repositories for development and contribution.
+* **`dev-centr/`**: Core repositories for development and contribution.
 * **`upstream/`**: Repositories managed as external dependencies.
 * **`user/`**: Your personal projects and forks.
 
