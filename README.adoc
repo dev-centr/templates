@@ -1,3 +1,5 @@
+link:https://github.com/dev-centr/templates[image:https://img.shields.io/badge/repo-GitHub-24292e?style=flat[Repository]]
+
 = Standard Project Templates
 :description: A collection of general-purpose development templates and configuration files.
 
