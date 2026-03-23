@@ -17,7 +17,7 @@ The `DiskManager` provides an automated "Move-off, Format, Move-back" strategy w
 
 == Issues Repository Pattern
 
-Dev Center automates the initialization of a dedicated `.issues` repository at the root of your code collection.
+Dev Center automates the initialization of a dedicated `.issues` repository following the canonical schema. Path and layout conventions for **end-user** agent rules are described in forkable **agent-rules** repositories (for example link:https://github.com/AMDphreak/agent-rules[AMDphreak/agent-rules]: see `RULES.md` and `general/creator.md`). When **Dev-Centr** acts on behalf of the user, product-specific agent instructions belong in link:https://github.com/dev-centr/devcentr-agent-rules[devcentr-agent-rules], not in the forkable rules repo.
 
 ### Core Benefits
 * **Local-First**: Searchable markdown files that don't depend on a web connection.
