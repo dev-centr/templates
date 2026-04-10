@@ -1,0 +1,6 @@
+{
+	// hidden from search to improve performance in VScode
+	"search.exclude": {
+		"**/.next": true
+	}
+}

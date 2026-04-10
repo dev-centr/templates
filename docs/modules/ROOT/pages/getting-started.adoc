@@ -7,7 +7,7 @@ This repository provides workspace templates and configuration files to help you
 1. **Discovery**: Browse the `workspaces/` directory to find a workflow that matches your tech stack (e.g., `next.js`, `python`, `rust`).
 2. **Implementation**:
    * **Manual**: Copy the relevant `.vscode` settings and boilerplate files to your project.
-   * **Workspace**: Reference a template folder in your `.code-workspace` file to automatically load extension recommendations.
+   * **Multi-root**: Optionally add template folders as roots in a local `.code-workspace` file; extension recommendations still apply per-folder from each root's `.vscode/extensions.json`.
 3. **Tooling**: Use the Dev Center app to manage and sync these templates across your repositories.
 
 == Best Practices for Contributions

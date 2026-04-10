@@ -10,12 +10,12 @@ Use the `python` template when you want Ruff-based formatting and linting for AP
 
 == How to use it
 
-To use this template, open the `python.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
+To use this template, copy `.vscode/settings.json` and `.vscode/extensions.json` from this folder into your project (merge with any existing `.vscode` files).
 
 [IMPORTANT]
 ====
-For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these Python-specific ones.
+For a complete setup, merge in the `.vscode` files from `workspaces/_common/` as well.
 ====
 
-Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
+Copying or merging these files into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
 

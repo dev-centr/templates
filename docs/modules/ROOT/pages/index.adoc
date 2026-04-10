@@ -27,6 +27,6 @@ These templates are designed to be installed via the https://github.com/dev-cent
 * **Inspect Projects**: Identify which templates match your project's technology stack.
 * **Environment Setup**: Optimize local filesystems (ReFS, XFS, Btrfs) and initialize the Issues Repository pattern.
 * **Documentation preview**: Integrated DocMinimap and high-performance Webview readers with multi-monitor anchoring.
-* **Sync & Apply**: Apply `.code-workspace` settings and extension recommendations to existing repositories.
+* **Sync & Apply**: Apply `.vscode` settings and extension recommendations to existing repositories.
 * **Create Base Templates**: Capture your best project configurations and save them back into the template library.
 

@@ -1,0 +1,14 @@
+{
+	"files.exclude": {
+		"**/.output": true,
+		"**/.nitro": true,
+		"**/.cache": true,
+		"**/.solid": true
+	},
+	"search.exclude": {
+		"**/.output": true,
+		"**/.nitro": true,
+		"**/.cache": true,
+		"**/.solid": true
+	}
+}

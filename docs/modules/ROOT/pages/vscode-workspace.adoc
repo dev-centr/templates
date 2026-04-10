@@ -1,19 +1,19 @@
 = VSCode Workspace Configuration
 
-The `templates` repository provides workspace configurations and boilerplate files for modern development projects. It contains both template files that should be copied to new repositories and active configuration files that can be included in workspace files.
+The `templates` repository provides workspace configurations and boilerplate files for modern development projects. It contains template files that should be copied to new repositories and active `.vscode` configuration you can merge into a project root.
 
 == Repository Structure
 
 The `templates` repository is organized as follows:
 
 * Root level: Files specific to the templates repository itself
-* `workspaces/`: Contains VS Code workspace templates for different workflows and configurations
+* `workspaces/`: Contains VS Code template folders for different workflows and configurations
 
 == Workspace Templates
 
 The `workspaces/` folder contains template folders that serve dual purposes:
 
-TIP: Each template folder now includes a `README.adoc` with usage notes, extension lists, and workspace instructions. Open the README directly inside `workspaces/+{name}+` when you need a refresher on what a template provides.
+TIP: Each template folder now includes a `README.adoc` with usage notes, extension lists, and merge instructions. Open the README directly inside `workspaces/+{name}+` when you need a refresher on what a template provides.
 
 === Template Files (Copy to New Repos)
 
@@ -24,11 +24,12 @@ Each template folder contains files that should be copied to new repositories:
 * `.hintrc` - Webhint configuration
 * `.github/FUNDING.yml` - GitHub funding configuration
 
-=== Active Configuration Files (Include in Workspaces)
+=== Active Configuration Files (Copy into Projects)
 
-Each template folder also contains active configuration files that can be copied into your project workspace:
+Each template folder also contains a `.vscode` directory with:
 
-* `+{template}+.code-workspace` - Combined settings and extension recommendations
+* `settings.json` — editor defaults, excludes, and language-specific formatter overrides
+* `extensions.json` — `recommendations` and optional `unwantedRecommendations`
 
 === Available Templates
 
@@ -40,35 +41,28 @@ Each template folder also contains active configuration files that can be copied
 * `rust/` - Rust workflow extensions
 * `solidstart/` - SolidStart workflow extensions
 
-== Using Templates in Workspaces
+== Using Templates
 
-To use a template in your project workspace, we recommend copying the relevant blocks from **both** the `_common` template and your specific tech stack template (e.g., `javascript/` or `next.js/`) directly into your project's `.code-workspace` file.
+To use a template in your project, copy and merge `.vscode/settings.json` and `.vscode/extensions.json` from **both** `_common/` and your stack folder (e.g., `javascript/` or `next.js/`) into your repository's `.vscode/` directory.
 
-Each template folder contains its own `.code-workspace` file pre-configured with industry-standard settings and extension recommendations.
+1. Start from `workspaces/_common/.vscode/` and merge `settings.json` and `extensions.json` into your project.
+2. Merge the same files from your stack folder (e.g., `workspaces/astro/.vscode/`), combining objects and extension lists rather than overwriting blindly.
 
-1. Open the `common.code-workspace` file in `_common/` and copy the `"settings"` and `"extensions"` blocks.
-2. Open the `.code-workspace` file within your desired tech stack folder (e.g., `astro.code-workspace`).
-3. Merge its `"settings"` and `"extensions"` blocks into your project's workspace file, being careful to combine rather than overwrite the arrays and objects.
+This keeps a self-contained setup that matches Dev Center standards without relying on relative paths to the templates repo.
 
-Copying these blocks directly into your project ensures a self-contained and fully configured development environment that matches the standards defined in the Dev Center, without the complexity of managing relative folder paths in your workspace definition.
+== Multi-root workspaces
 
-== Global Workspace
-
-The `workspaces/global.code-workspace` file provides an example workspace definition that includes the template repository itself, useful as a starting point for creating your own multi-root workspaces.
+If you edit several repositories in one window, you can still add a local `*.code-workspace` file with multiple `folders` entries. Put shared settings in each repo's `.vscode/settings.json` (or use workspace file settings only for truly multi-root keys). The templates repo no longer ships example multi-root workspace files.
 
 == Settings and Extension Recommendations
 
-**Important:** The `.vscode/settings.json` and `.vscode/extensions.json` files do NOT automatically apply to other repositories when included in a multi-root workspace. 
+When you **open a folder**, VS Code loads `.vscode/settings.json` and `.vscode/extensions.json` from that folder automatically.
 
-To share settings and extension recommendations across repositories, you must embed them directly in your project's `.code-workspace` file. We provide pre-configured `.code-workspace` files in each template folder that you can copy from.
+For **multi-root** workspaces opened via a `.code-workspace` file, folder-level `.vscode` still applies per root; you can add workspace-level settings in the `.code-workspace` file when multiple roots need the same overrides.
 
 [WARNING]
 ====
-**Settings Precedence & Priority:** VS Code settings follow a strict hierarchy of visibility: **User Settings > Workspace Settings (.code-workspace) > Folder Settings (.vscode/settings.json)**.
-
-However, **Language-specific settings** (e.g., `[json]`) always have higher priority than **Global settings** (e.g., `editor.defaultFormatter`), even if they are defined at a lower-priority scope. 
-
-For example, if a user has a "User" level language default set for JSON (like Prettier), it will override a "Workspace" level global default (like Biome). To ensure project standards are enforced, we use explicit language-level blocks in our workspace files to provide the necessary specificity to win against personal defaults.
+**Settings precedence:** For a single-folder window, **User** settings apply first, then **Folder** (`.vscode/settings.json`). **Language-specific** blocks (e.g., `"[json]"`) override generic keys at the same scope, so we use explicit language blocks so team defaults win over personal formatter choices.
 ====
 
 == Creating New Templates
@@ -77,7 +71,7 @@ When creating a new template folder:
 
 1. Create a folder named after the technology or workflow (e.g., `+{workflow}+/`) in `workspaces/`
 2. Add a `README.adoc` explaining the template's purpose and contents
-3. Add a `+{workflow}+.code-workspace` file with the relevant `"settings"` and `"extensions"` blocks
+3. Add `.vscode/settings.json` and `.vscode/extensions.json` with the relevant defaults and recommendations
 4. Optionally add template files (`.gitattributes`, `.gitignore`, etc.) that should be copied to new repos
 
 [IMPORTANT]

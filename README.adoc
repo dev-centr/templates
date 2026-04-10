@@ -1,9 +1,13 @@
-link:https://github.com/dev-centr/templates[image:https://img.shields.io/badge/repo-GitHub-24292e?style=flat[Repository]]
-
 = Standard Project Templates
 :description: A collection of general-purpose development templates and configuration files.
 
+link:https://github.com/dev-centr/templates[image:https://img.shields.io/badge/repo-GitHub-24292e?style=flat[Repository]]
+
 This repository provides an industry standard collection of project templates, workspace configurations, and boilerplate files for developers to use as a base for their own projects. It serves as a manifest of online templates for the Dev Center app, allowing users to download and customize individual templates locally.
+
+This repository does not provide AI agent rules for **end users**. Those belong in the link:https://github.com/dev-centr/agent-rules[agent-rules] repository (forkable personal defaults).
+
+When **Dev-Centr** (the app) acts on behalf of the user, product-specific agent instructions live in link:https://github.com/dev-centr/devcentr-agent-rules[devcentr-agent-rules], not in the forkable rules repo.
 
 == Purpose
 
@@ -27,9 +31,8 @@ templates/
 │   ├── python/             # Python development workflow
 │   ├── rust/               # Rust development workflow
 │   ├── solidstart/         # SolidStart web development workflow
-│   └── global.code-workspace # Example global workspace definition
+│   └── (optional) author your own multi-root `*.code-workspace` locally if needed
 ├── docs/                   # Documentation for the templates (Antora format)
-├── rules.txt               # Hard-linked central rules template (Z:\code\rules.txt)
 └── README.adoc             # This file
 ----
 
@@ -64,16 +67,6 @@ The Dev Center app serves as the primary gateway for these templates. It include
 
 Common configuration files are provided in the root and `_common/` directories. These should be linked or copied to new repositories to ensure consistent behavior across the Dev Center ecosystem.
 
-=== Central Rules (`rules.txt`)
-
-The `rules.txt` file at the root of this repository serves as the central manifest for development environment rules.
-
-==== How to Use
-1. **Bootstrap New Projects**: When creating a new repository, copy or link this file into the project root (or `.cursorrules` / `.agent/rules`) to provide the AI with the base context of your environment.
-2. **AI Context**: Agents should be instructed to read the contents of this file before performing operations. It encodes standard expectations for the OS, Shell, and mandatory tooling.
-3. **Synchronization (Recommended)**: For local development, it is recommended to **hard-link** this file from the repository root to your own central rules location. This ensures that any adjustments to your global standards are immediately reflected across all projects.
-
 == Documentation
 
 For detailed guides on how to use these templates and configure your development environment, see the link:https://docs.devcentr.org[Standard Project Templates Documentation].
-

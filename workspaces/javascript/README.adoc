@@ -4,27 +4,26 @@ The `javascript` template layers JavaScript-specific tooling on top of the share
 
 == What it provides
 
-* Prettier + Prettier-ESLint formatting (via the `javascript.code-workspace` settings) for `.js`, `.jsx`, `.ts`, and `.tsx`.
-* Opinionated workspace defaults that hide noisy folders like `node_modules`, `.git`, and `.next` while keeping Git status scoped to your project.
-* A ready-to-copy VS Code workspace file (`javascript.code-workspace`) you can use as a starting point for new repositories.
+* Baseline JavaScript/TypeScript editor settings live in `_common` (dprint and language-specific formatter overrides). This template adds a starter `.vscode` folder you can copy into new repositories.
+* Opinionated defaults that hide noisy folders like `node_modules`, `.git`, and `.next` while keeping Git status scoped to your project come from `_common` when you merge its `.vscode/settings.json`.
 
-The template does not currently ship extra extension recommendations—the shared ones live in `workspaces/_common`. Add any JavaScript-specific extensions here once they are available on OpenVSX.
+This template adds `xabikos.JavaScriptSnippets` on top of the shared list in `workspaces/_common`. Add more JavaScript-specific extensions in `.vscode/extensions.json` once they are available on OpenVSX.
 
 [IMPORTANT]
 ====
-**Settings Precedence:** VS Code settings follow a hierarchy: **User > Workspace > Folder**. However, **Language-specific settings** (e.g., `[json]`) always override global settings within the same or higher priority levels. 
+**Settings Precedence:** When you open a single folder, VS Code applies **User** settings first, then **Folder** (`.vscode/settings.json`). **Language-specific settings** (e.g., `[json]`) override global keys at the same scope. 
 
-To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in our workspace files. If you find your personal settings are interfering, ensure your workspace-level language overrides are correctly defined.
+To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in `.vscode/settings.json`. If you find your personal settings are interfering, ensure your folder-level language overrides are correctly defined.
 ====
 
 == How to use it
 
-To use this template, open the `javascript.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
+To use this template, copy `.vscode/settings.json` and `.vscode/extensions.json` from this folder into your project (merge with any existing `.vscode` files).
 
 [IMPORTANT]
 ====
-For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these JavaScript-specific ones.
+For a complete setup, merge in the `.vscode` files from `workspaces/_common/` as well.
 ====
 
-Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
+Copying or merging these files into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
 

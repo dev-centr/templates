@@ -12,24 +12,24 @@ The `_common` workspace template provides baseline tooling that every repository
 == Included configuration
 
 * `.vscode/extensions.json` – curated list of cross-cutting extensions. They all ship on the community-run OpenVSX marketplace, so they install cleanly in Cursor and other VS Code forks.
-* `common.code-workspace` – shared YAML schema mappings and other base tweaks that are safe to load alongside any repository.
+* `.vscode/settings.json` – shared YAML schema mappings, formatter defaults, and other base tweaks that are safe to merge into any repository.
 
 [IMPORTANT]
 ====
-**Settings Precedence:** VS Code settings follow a hierarchy: **User > Workspace > Folder**. However, **Language-specific settings** (e.g., `[json]`) always override global settings within the same or higher priority levels.
+**Settings Precedence:** When you open a single folder, VS Code applies **User** settings first, then **Folder** (`.vscode/settings.json`). **Language-specific settings** (e.g., `[json]`) override global keys at the same scope.
 
-To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in our workspace files. If you find your personal settings are interfering, ensure your workspace-level language overrides are correctly defined.
+To ensure project standards "win" against personal user defaults (like a global Prettier preference), we use explicit language-level overrides in `.vscode/settings.json`. If you find your personal settings are interfering, ensure your folder-level language overrides are correctly defined.
 ====
 
 == How to use it
 
-To use this template, open the `common.code-workspace` file in this folder and copy the `settings` and `extensions` blocks into your project's `.code-workspace` file.
+To use this template, copy `.vscode/settings.json` and `.vscode/extensions.json` from this folder into your project (merge objects and recommendation arrays with care).
 
 [IMPORTANT]
 ====
-You should also copy the corresponding blocks from your chosen tech stack template (e.g., `javascript.code-workspace`) and merge them into your project's workspace file to ensure complete coverage.
+You should also merge in the `.vscode` files from your chosen tech stack template (e.g., `javascript/`) so formatter rules, excludes, and extension lists stay complete.
 ====
 
-Copying these blocks directly into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
+Copying or merging these files into your project ensures that your development environment is fully configured with the shared standards of the Dev Center, without needing to reference external folders.
 
 If you need to copy a specific configuration file (for example `.github/FUNDING.yml`), open the template folder directly and copy the file into your repo.

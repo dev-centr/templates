@@ -11,11 +11,11 @@ All recommendations come from the community-run OpenVSX marketplace, ensuring co
 
 == How to use it
 
-To use this template, open the `solidstart.code-workspace` file in this folder and copy its `settings` and `extensions` blocks into your project's `.code-workspace` file.
+To use this template, copy `.vscode/settings.json` and `.vscode/extensions.json` from this folder into your project (merge with any existing `.vscode` files).
 
 [IMPORTANT]
 ====
-For a complete setup, you should also copy the baseline settings and extensions from the `_common/common.code-workspace` file and merge them with these SolidStart-specific ones.
+For a complete setup, merge in the `.vscode` files from `workspaces/_common/` as well.
 ====
 
 Including these settings adds Solid-specific snippets and optimizations while maintaining the shared standards from the `_common` template.
