@@ -1,0 +1,23 @@
+{
+	"recommendations": [
+		// Code Formatters & Linters
+		"dprint.dprint",
+		"biomejs.biome",
+
+		// Markup & Documentation
+		"asciidoctor.asciidoctor-vscode",
+		"DavidAnson.vscode-markdownlint",
+		"yzhang.markdown-all-in-one",
+		"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+		"bierner.markdown-mermaid",
+		"redhat.vscode-yaml",
+		"tamasfe.even-better-toml",
+
+		// Web Technologies
+		"astro-build.astro-vscode",
+		"unifiedjs.vscode-mdx",
+
+		// Git & Collaboration
+		"eamodio.gitlens"
+	]
+}

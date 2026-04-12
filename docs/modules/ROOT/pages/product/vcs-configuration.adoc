@@ -23,6 +23,16 @@ The module uses a model-driven approach to manage global and project-specific se
 * **Searchable Tree**: Quickly filter through categories like `Authentication`, `Extensions`, and `Repository`.
 * **Instant Apply**: Changes are mapped directly to the appropriate config files for each system.
 
+=== Performance Optimization
+Standardized development environments across this ecosystem prioritize high performance. For repositories with large numbers of files, we recommend enabling the modern filesystem monitor:
+
+[source,bash]
+----
+git config --global core.fsmonitor true
+----
+
+See the xref:general-knowledge:reference/git-performance.adoc[Git Performance guide] for detailed information on resource usage, security considerations, and legacy key deprecation.
+
 ### Remote Detection & Fixes
 Using integrated `gh` and `glab` support for Git (and path probing for SVN/Hg), the **Remotes Sub-module** can:
 1. Detect upstream parent URLs for local forks.
