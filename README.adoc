@@ -1,7 +1,31 @@
-= Standard Project Templates
-:description: A collection of general-purpose development templates and configuration files.
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+:sectanchors:
 
-link:https://github.com/dev-centr/templates[image:https://img.shields.io/badge/repo-GitHub-24292e?style=flat[Repository]]
+ifndef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/templates.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/templates/graphs/contributors]
+image:https://img.shields.io/github/forks/dev-centr/templates.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/templates/network/members]
+image:https://img.shields.io/github/stars/dev-centr/templates.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/templates/stargazers]
+image:https://img.shields.io/github/issues/dev-centr/templates.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/templates/issues]
+endif::[]
+
+ifdef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/templates.svg?style=for-the-badge[Contributors]
+image:https://img.shields.io/github/forks/dev-centr/templates.svg?style=for-the-badge[Forks]
+image:https://img.shields.io/github/stars/dev-centr/templates.svg?style=for-the-badge[Stars]
+image:https://img.shields.io/github/issues/dev-centr/templates.svg?style=for-the-badge[Issues]
+endif::[]
+
+= Standard Project Templates
+
+Template settings files for dev tools — a collection of general-purpose development templates and configuration files.
+
+link:https://docs.devcentr.org[Explore the docs] ·
+link:https://github.com/dev-centr/templates/issues[Report Bug] ·
+link:https://github.com/dev-centr/templates/issues[Request Feature]
+
+== About The Project
 
 This repository provides an industry standard collection of project templates, workspace configurations, and boilerplate files for developers to use as a base for their own projects. It serves as a manifest of online templates for the Dev Center app, allowing users to download and customize individual templates locally.
 
@@ -36,7 +60,9 @@ templates/
 └── README.adoc             # This file
 ----
 
-== How It Works
+== Usage
+
+=== How It Works
 
 This repository is designed to be pulled by tools like the Dev Center app.
 
@@ -44,7 +70,7 @@ This repository is designed to be pulled by tools like the Dev Center app.
 2. **Local Manipulation**: Users can clone this repository to create a local template store.
 3. **Customization**: Once cloned locally, users can modify the templates to fit their specific needs and even point the git remote to their own private repository for organization-specific standards.
 
-== Available Templates
+=== Available Templates
 
 * `_common/` – Base extensions for all projects (Asciidoc, Git tools, Media editors).
 * `astro/` – Specialized Astro development environment.
@@ -54,7 +80,7 @@ This repository is designed to be pulled by tools like the Dev Center app.
 * `rust/` – Performance-focused Rust development setup.
 * `solidstart/` – Optimized SolidStart development experience.
 
-== Usage with Dev Center
+=== Usage with Dev Center
 
 The Dev Center app serves as the primary gateway for these templates. It includes dedicated modules to:
 
@@ -63,10 +89,17 @@ The Dev Center app serves as the primary gateway for these templates. It include
 * **Streamlined Installation**: Install templates directly into your projects with a single click.
 * **Export & Clone**: Save your project's custom configurations as new local templates or derivatives of existing ones.
 
-== Configuration Payloads
+=== Configuration Payloads
 
 Common configuration files are provided in the root and `_common/` directories. These should be linked or copied to new repositories to ensure consistent behavior across the Dev Center ecosystem.
 
 == Documentation
 
 For detailed guides on how to use these templates and configure your development environment, see the link:https://docs.devcentr.org[Standard Project Templates Documentation].
+
+== Contact
+
+DevCentr.org — support@devcentr.org
+
+* Project: https://github.com/dev-centr/templates
+* Site: https://devcentr.org
