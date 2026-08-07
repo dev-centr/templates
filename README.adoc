@@ -3,19 +3,12 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-ifndef::env-github[]
+[[readme-top]]
+
 image:https://img.shields.io/github/contributors/dev-centr/templates.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/templates/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/templates.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/templates/network/members]
 image:https://img.shields.io/github/stars/dev-centr/templates.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/templates/stargazers]
 image:https://img.shields.io/github/issues/dev-centr/templates.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/templates/issues]
-endif::[]
-
-ifdef::env-github[]
-image:https://img.shields.io/github/contributors/dev-centr/templates.svg?style=for-the-badge[Contributors]
-image:https://img.shields.io/github/forks/dev-centr/templates.svg?style=for-the-badge[Forks]
-image:https://img.shields.io/github/stars/dev-centr/templates.svg?style=for-the-badge[Stars]
-image:https://img.shields.io/github/issues/dev-centr/templates.svg?style=for-the-badge[Issues]
-endif::[]
 
 = Standard Project Templates
 
@@ -32,6 +25,21 @@ This repository provides an industry standard collection of project templates, w
 This repository does not provide AI agent rules for **end users**. Those belong in the link:https://github.com/dev-centr/agent-rules[agent-rules] repository (forkable personal defaults).
 
 When **Dev-Centr** (the app) acts on behalf of the user, product-specific agent instructions live in link:https://github.com/dev-centr/devcentr-agent-rules[devcentr-agent-rules], not in the forkable rules repo.
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+
+== Built With
+
+* Editor / workspace
+** link:https://code.visualstudio.com/[image:https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white[VS Code]]
+* Docs
+** link:https://antora.org/[image:https://img.shields.io/badge/Antora-4A4A55?style=for-the-badge&logo=asciidoctor&logoColor=white[Antora]]
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
 
 == Purpose
 
@@ -103,3 +111,7 @@ DevCentr.org — support@devcentr.org
 
 * Project: https://github.com/dev-centr/templates
 * Site: https://devcentr.org
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
