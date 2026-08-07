@@ -3,8 +3,28 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-[[readme-top]]
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/dev-centr/templates/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/templates.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/dev-centr/templates/network/members"><img src="https://img.shields.io/github/forks/dev-centr/templates.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/dev-centr/templates/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/templates.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/dev-centr/templates/issues"><img src="https://img.shields.io/github/issues/dev-centr/templates.svg?style=for-the-badge" alt="Issues"></a>
+<br />
+<h3 align="center">Standard Project Templates</h3>
+<p align="center">
+Template settings files for dev tools — a collection of general-purpose development templates and configuration files.<br />
+<a href="https://docs.devcentr.org"><strong>Explore the docs »</strong></a><br /><br />
+<a href="https://github.com/dev-centr/templates/issues">Report Bug</a>
+&middot;
+<a href="https://github.com/dev-centr/templates/issues">Request Feature</a>
+</p>
+</div>
+++++
+endif::[]
 
+ifndef::env-github[]
 image:https://img.shields.io/github/contributors/dev-centr/templates.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/templates/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/templates.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/templates/network/members]
 image:https://img.shields.io/github/stars/dev-centr/templates.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/templates/stargazers]
@@ -17,6 +37,7 @@ Template settings files for dev tools — a collection of general-purpose develo
 link:https://docs.devcentr.org[Explore the docs] ·
 link:https://github.com/dev-centr/templates/issues[Report Bug] ·
 link:https://github.com/dev-centr/templates/issues[Request Feature]
+endif::[]
 
 == About The Project
 
