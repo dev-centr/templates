@@ -1,4 +1,4 @@
-|= Getting Started
+= Getting Started
 
 This repository provides workspace templates and configuration files to help you set up standardized development environments.
 

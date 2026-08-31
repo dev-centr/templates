@@ -1,5 +1,4 @@
-= VCS & Repository Management
-:navtitle: VCS Configuration
+= VCS configuration
 
 The Dev Center simplifies complex Version Control workflows and ensures consistent repository organization across your machine.
 

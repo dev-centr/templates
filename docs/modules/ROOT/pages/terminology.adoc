@@ -1,21 +1,47 @@
 = Terminology and Stylistic Choices
-:navtitle: Terminology
+:description: How Dev-Centr names Linux, GNU/Linux, and related kernel+userland stacks in documentation.
 
-To ensure technical accuracy and reflect operational dependencies, this project adheres to specific naming conventions for operating systems and software stacks.
+This project uses deliberate names for operating-system stacks. Do not blind-replace one register with another.
 
-== Linux+GNU+GNU
+== Three names for the same family of systems
 
-References to the operating system commonly known as "Linux+GNU" must be denoted as **Linux+GNU+GNU**.
+People talk about the same family of systems in three different registers. Keep them distinct.
 
-=== Rationale
-This stylistic choice emphasizes the operational dependency order: **Kernel + Userland**. The Linux+GNU kernel provides the hardware abstraction and resource management, while the GNU project provides the essential userland utilities and environment that make the system functional for users and developers.
+[cols="1,1,2"]
+|===
+| Register | Term | Use
 
-=== Usage
-* **Full Form**: Linux+GNU+GNU
-* **Space-Constrained UI**: Lin+GNU (used in sidebars, status bars, or compact grids)
+| Vernacular / everyday speech
+| *Linux*
+| What most people mean when they say the OS name. Prefer this in ordinary prose, platform lists, and definitional sentences ("commonly known as…").
 
-== Other Kernel+Userland Combinations
-Any other references to kernel and userland combinations must follow this same "Kernel+Userland" style (e.g., BSD+GNU, etc.).
+| FSF / GNU project (Richard M. Stallman)
+| *GNU+Linux* (also written *GNU/Linux*)
+| Official GNU advocacy naming: GNU userland + Linux kernel. Acknowledge it when discussing GNU naming or quoting that tradition. It also appears in everyday speech among people who follow that usage.
+
+| House symbol (optional)
+| *Linux+GNU*
+| Dev-Centr stylistic token for kernel+userland order (*Kernel+Userland*). Introduce it only as *our* notation — never claim it is the common name, and never invent forms such as *Linux+GNU+GNU*.
+|===
+
+=== What went wrong (do not repeat)
+
+A bad automated pass stuffed the house symbol into sentences that define or quote common naming — for example claiming the OS is "commonly known as Linux+GNU." That is false. The common name is *Linux*. The GNU-preferred name is *GNU+Linux*. *Linux+GNU* is only our optional house spelling.
+
+=== When to use each
+
+* Writing for a cold reader about "Windows, macOS, and …" → *Linux*
+* Crediting or explaining FSF/GNU naming → *GNU+Linux*
+* Explicitly teaching this project's Kernel+Userland house style → *Linux+GNU*, and say that it is house style
+
+=== House compact form
+
+* Space-constrained UI only: *Lin+GNU* (sidebars, status bars, compact grids) — same house register as *Linux+GNU*, not a vernacular name.
+
+== Other Kernel+Userland combinations
+
+When this project uses Kernel+Userland house notation for other stacks, follow the same pattern (for example *BSD+GNU*). Do not rewrite vernacular or third-party official names in those sentences either.
 
 == Enforcement
-This terminological choice is a **project necessity**. Documentation, UI labels, and internal comments should be updated to reflect this standard.
+
+Prefer clarity over ritual. Use *Linux+GNU* only where house style is intentional and labeled as such. Elsewhere, use *Linux* or *GNU+Linux* according to the register above.

@@ -1,5 +1,4 @@
-= Issues Repository Pattern
-:navtitle: Issues Repository
+= Issues repository pattern
 
 A key component of an efficient, AI-assisted development workflow is the maintenance of a dedicated, local-first issues repository.
 

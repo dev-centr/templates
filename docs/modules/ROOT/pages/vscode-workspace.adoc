@@ -1,4 +1,4 @@
-= VSCode Workspace Configuration
+= VS Code workspace
 
 The `templates` repository provides workspace configurations and boilerplate files for modern development projects. It contains template files that should be copied to new repositories and active `.vscode` configuration you can merge into a project root.
 

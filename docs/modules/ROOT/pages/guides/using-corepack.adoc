@@ -1,0 +1,61 @@
+= Using Corepack
+:description: Why Corepack sits above package managers, and how to enable it for leaders and followers.
+
+Corepack is Node.js's package-manager manager. It sits at the top of the local tooling hierarchy and pins which package manager (pnpm, Yarn, …) a project uses so every clone gets the same one.
+
+Before you continue, skim xref:guides/tool-hierarchy.adoc[Tool hierarchy] for how programs, packages, package managers, and Corepack relate.
+
+== Why use Corepack?
+
+The default Node package manager (npm) copies package files into each project on install, which wastes disk. Prefer pnpm: it stores packages once in a central store and links them into the project. Those links stay local and are not uploaded to GitHub (pnpm typically adds its store path to `.gitignore`).
+
+Corepack (https://nodejs.org/api/corepack.html[Node.js Corepack docs]) is the tool that enables and selects that package manager from project settings. It has been experimental; enable it after installing Node.js, then follow the workflows below.
+
+== Preparation
+
+Due to an issue with outdated signatures in Corepack, update Corepack first:
+
+[source,pwsh]
+----
+npm install --global corepack@latest
+----
+
+== Leader workflow
+
+If you create or own the project, run as Admin in the project folder:
+
+[source,pwsh]
+----
+corepack enable
+----
+
+Set the desired package manager (examples):
+
+[source,pwsh]
+----
+corepack use pnpm@latest
+corepack use pnpm@latest-10
+corepack use pnpm@7.x
+corepack use pnpm@6.1
+corepack use yarn@stable
+----
+
+NOTE: Replace this placeholder with an updated image showing Corepack installation options and prompts for `corepack enable` and `corepack use`.
+
+== Follower workflow
+
+If you are joining an existing project, run as Admin in the project folder:
+
+[source,pwsh]
+----
+corepack install
+----
+
+== After installation
+
+Install dependencies with pnpm:
+
+[source,pwsh]
+----
+pnpm install
+----

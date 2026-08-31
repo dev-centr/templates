@@ -1,0 +1,22 @@
+= 2026-08-30 — Templates docs audit
+:description: Detail notes for the Templates Antora component cleanup.
+
+== Title syntax
+
+Two start pages began with a literal pipe before the equals sign (`|= Title`). AsciiDoc treated that as table markup, so Antora left the HTML title *Untitled* and rendered the title line in the body. Removed the pipe; set the component start H1 to *Templates*.
+
+== Terminology
+
+Rewrote the article so vernacular *Linux*, FSF/GNU *GNU+Linux*, and optional house *Linux+GNU* stay in separate registers. Undid automation that claimed the OS is “commonly known as Linux+GNU” and removed the *Linux+GNU+GNU* typo. Other templates pages that listed platforms now say *Linux* again.
+
+== Dev:* pages
+
+`pages/dev/` held Antora demo stubs (*Components* with a Hello World block; a second *Getting Started*) plus encyclopedia-style tools and educational lists. They were not scaffold-specific and appeared in the sidebar as *Dev:*. Removed from the published tree. Point cold readers at General Knowledge for recommended tools.
+
+== Corepack
+
+*Why use Corepack* overlapped the better install how-to. Merged into one page, *Using Corepack* (short why + leader/follower steps). *Tool hierarchy* retitled to match nav and links to the merged page.
+
+== IA vs General Knowledge
+
+Keep *templates* as the product/scaffold component (workspace templates, Dev Center integration, committing/SSH/Corepack as they relate to using this repo). Do not mega-merge into General Knowledge; deep-link encyclopedia material there instead. Further optional moves later: SSH keys and tool-hierarchy explanations if GK grows matching how-tos.

@@ -1,0 +1,14 @@
+= Changelog
+
+Timeline of functional changes to the Standard Project Templates repository and its Antora docs.
+
+== 2026-08-30 — Templates docs audit
+
+* Fixed AsciiDoc document titles on the component start page and Getting Started (`|=…` was parsed as a table cell, so Antora published *Untitled*)
+* Rewrote xref:terminology.adoc[Terminology and Stylistic Choices] with a three-way naming map: vernacular *Linux*, FSF/GNU *GNU+Linux*, optional house *Linux+GNU*; removed *Linux+GNU+GNU* and the false “commonly known as Linux+GNU” claim
+* Restored vernacular *Linux* in platform lists (environment setup, SSH keys, committing)
+* Merged Corepack “why” + install helper into xref:guides/using-corepack.adoc[Using Corepack]; removed overlapping pages
+* Removed leaked `Dev:*` stub/encyclopedia pages from the published tree (demo Components / Getting Started stubs; tools and educational lists belong in General Knowledge)
+* Slimmed nav; H1 = nav labels; start page points at General Knowledge for product-agnostic tooling
+
+Details: xref:changelog-details/2026-08-30 - templates-docs-audit.adoc[2026-08-30 — Templates docs audit]

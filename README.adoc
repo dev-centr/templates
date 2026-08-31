@@ -124,7 +124,11 @@ Common configuration files are provided in the root and `_common/` directories. 
 
 == Documentation
 
-For detailed guides on how to use these templates and configure your development environment, see the link:https://docs.devcentr.org[Standard Project Templates Documentation].
+For detailed guides on how to use these templates and configure your development environment, see the link:https://docs.devcentr.org/templates/[Templates] component on docs.devcentr.org.
+
+== Changelog
+
+See the Antora xref-style timeline in link:https://docs.devcentr.org/templates/changelog/[Changelog] (source: `docs/modules/ROOT/pages/changelog.adoc`).
 
 == Contact
 

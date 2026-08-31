@@ -1,5 +1,4 @@
-= Documentation Preview System
-:navtitle: Documentation Preview
+= Documentation preview
 
 The Dev Center includes a performant, monitor-aware documentation viewing system that eliminates the context switch to a full web browser.
 

@@ -1,5 +1,4 @@
-= Environment Setup Features
-:navtitle: Environment Setup
+= Environment setup
 
 The Environment Setup module is designed to align the host system with high-performance development standards.
 
@@ -9,7 +8,7 @@ Effective filesystem choice is critical for build performance and disk longevity
 
 ### Supported High-Performance Filesystems
 * **Windows**: **ReFS (Dev Drive)** - Optimized for developer workloads, reducing file system overhead during high-IO operations (like `node_modules` instantiation).
-* **Linux+GNU+GNU**: **XFS or Btrfs** - Offers advanced features like CoW (Copy-on-Write) and high performance for large source trees.
+* **Linux**: **XFS or Btrfs** - Offers advanced features like CoW (Copy-on-Write) and high performance for large source trees.
 * **macOS**: **APFS** - The standard high-performance choice for Apple systems.
 
 ### Migration Planning

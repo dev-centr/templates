@@ -1,5 +1,4 @@
-= Architecture Overview
-:navtitle: Overview
+= Architecture overview
 
 The Dev Center application is a D-lang (DlangUI) based orchestrator designed to manage a developer's local environment, repositories, and documentation.
 

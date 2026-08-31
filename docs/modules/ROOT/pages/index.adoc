@@ -1,4 +1,4 @@
-|= Standard Project Templates Documentation
+= Templates
 
 This repository provides instructions and support files for setting up development environments using standardized project and workspace templates.
 
@@ -29,4 +29,8 @@ These templates are designed to be installed via the https://github.com/dev-cent
 * **Documentation preview**: Integrated DocMinimap and high-performance Webview readers with multi-monitor anchoring.
 * **Sync & Apply**: Apply `.vscode` settings and extension recommendations to existing repositories.
 * **Create Base Templates**: Capture your best project configurations and save them back into the template library.
+
+== Related encyclopedia docs
+
+Product-agnostic tooling lists and onboarding live in xref:general-knowledge::index.adoc[General Knowledge] (for example xref:general-knowledge::reference/recommended-tools.adoc[Recommended tools]). This component stays focused on scaffold templates and Dev Center integration.
 

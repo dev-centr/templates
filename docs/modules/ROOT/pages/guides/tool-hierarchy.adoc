@@ -1,4 +1,5 @@
-= Tool hierarchy (SW development)
+= Tool hierarchy
+:description: How programs, packages, package managers, and Corepack stack in local development.
 
 Programmers write code, and that code inevitably uses code libraries (or packages containing some kind of functionality or information) that other programmers have written.
 
@@ -13,4 +14,4 @@ Package managers install packages and make sure that incompatible packages are n
 * program < package < package manager < package manager manager
 ** Example: myapp < ai < pnpm < Corepack
 
-More docs: xref:guides/why-use-corepack.adoc[Why use Corepack]
+More docs: xref:guides/using-corepack.adoc[Using Corepack]
