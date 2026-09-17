@@ -30,7 +30,7 @@ Standardized development environments across this ecosystem prioritize high perf
 git config --global core.fsmonitor true
 ----
 
-See the xref:general-knowledge:reference/git-performance.adoc[Git Performance guide] for detailed information on resource usage, security considerations, and legacy key deprecation.
+See the xref:general-knowledge::reference/git-performance.adoc[Git Performance guide] for detailed information on resource usage, security considerations, and legacy key deprecation.
 
 ### Remote Detection & Fixes
 Using integrated `gh` and `glab` support for Git (and path probing for SVN/Hg), the **Remotes Sub-module** can:
