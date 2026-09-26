@@ -2,6 +2,10 @@
 
 Timeline of functional changes to the Standard Project Templates repository and its Antora docs.
 
+== 2026-09-26 - Nav Overview
+
+* Leading nav item `* xref:index.adoc[Overview]` for forest parity (`Templates > Overview`).
+
 == 2026-08-30 — Templates docs audit
 
 * Fixed AsciiDoc document titles on the component start page and Getting Started (`|=…` was parsed as a table cell, so Antora published *Untitled*)
